@@ -1,0 +1,14 @@
+{
+  "hypermod.themoon": {
+    "category": "hostile",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "hypermod:theMoon",
+        "type": "event",
+        "stream": true
+      },
+      "hypermod/theMoon"
+    ]
+  }
+}

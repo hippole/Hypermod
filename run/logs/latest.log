@@ -1,0 +1,77 @@
+[09:27:12] [Client thread/INFO]: Setting user: Player304
+[09:27:16] [Client thread/INFO]: LWJGL Version: 2.9.4
+[09:27:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hypermod
+[09:27:25] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[09:27:26] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[09:27:26] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[09:27:26] [Thread-9/INFO]: OpenAL initialized.
+[09:27:26] [Sound Library Loader/INFO]: Sound engine started
+[09:27:31] [Client thread/WARN]: File hypermod:sounds/hypermod/theMoon.ogg does not exist, cannot add it to event hypermod:hypermod.themoon
+[09:27:44] [Client thread/INFO]: Created: 16x16 textures-atlas
+[09:27:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hypermod
+[09:27:50] [Client thread/INFO]: SoundSystem shutting down...
+[09:27:50] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[09:27:50] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[09:27:50] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[09:27:50] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[09:27:50] [Thread-11/INFO]: OpenAL initialized.
+[09:27:51] [Sound Library Loader/INFO]: Sound engine started
+[09:27:54] [Client thread/WARN]: File hypermod:sounds/hypermod/theMoon.ogg does not exist, cannot add it to event hypermod:hypermod.themoon
+[09:28:04] [Client thread/INFO]: Created: 512x512 textures-atlas
+[09:28:27] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[09:28:27] [Server thread/INFO]: Generating keypair
+[09:28:28] [Server thread/INFO]: Preparing start region for level 0
+[09:28:29] [Server thread/INFO]: Preparing spawn area: 37%
+[09:28:30] [Server thread/INFO]: Changing view distance to 2, from 10
+[09:28:32] [Server thread/INFO]: Player304[local:E:1b6a5846] logged in with entity id 297 at (182.32509773548333, 63.0, 238.13732885177802)
+[09:28:32] [Server thread/INFO]: Player304 joined the game
+[09:28:36] [Server thread/INFO]: Saving and pausing game...
+[09:28:36] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[09:28:36] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[09:28:36] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End
+[09:28:45] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:theMoon.ogg
+[09:28:45] [Client thread/INFO]: [CHAT] §cUnfortunately this command doesn't work right now.
+[09:28:52] [Client thread/INFO]: [CHAT] §cCould not find any information on Hypermnesia
+[09:28:52] [Client thread/INFO]: [CHAT] §cPossible reasons
+[09:28:52] [Client thread/INFO]: [CHAT] §c1. They are nicked
+[09:28:52] [Client thread/INFO]: [CHAT] §c2. They are offline
+[09:28:52] [Client thread/INFO]: [CHAT] §c3. They are afk in limbo.
+[09:28:52] [Client thread/INFO]: [CHAT] §c4. They have their api off.
+[09:28:52] [Client thread/INFO]: [CHAT] §c5. You spelled their name wrong dumbass.
+[09:29:05] [Client thread/INFO]: [CHAT] §aRodePapon§2's status on hypixel.
+[09:29:05] [Client thread/INFO]: [CHAT] §aRodePapon§6--------------
+[09:29:05] [Client thread/INFO]: [CHAT] §3uuid: §bdbb26fe2730144509547d670b528808d
+[09:29:05] [Client thread/INFO]: [CHAT] §3gameType: §bARCADE
+[09:29:05] [Client thread/INFO]: [CHAT] §3mode: §bLOBBY
+[09:29:11] [Server thread/INFO]: Saving and pausing game...
+[09:29:11] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[09:29:11] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[09:29:11] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End
+[09:31:28] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2115ms behind, skipping 42 tick(s)
+[09:31:28] [Server thread/INFO]: Saving and pausing game...
+[09:31:28] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[09:31:29] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[09:31:29] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End
+[09:31:33] [Server thread/INFO]: Saving and pausing game...
+[09:31:33] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[09:31:34] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[09:31:34] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End
+[09:32:38] [Client thread/INFO]: [CHAT] §aRodePapon§2's status on hypixel.
+[09:32:38] [Client thread/INFO]: [CHAT] §aRodePapon§6--------------
+[09:32:38] [Client thread/INFO]: [CHAT] §3uuid: §bdbb26fe2730144509547d670b528808d
+[09:32:38] [Client thread/INFO]: [CHAT] §3gameType: §bARCADE
+[09:32:38] [Client thread/INFO]: [CHAT] §3mode: §bPARTY
+[09:32:38] [Client thread/INFO]: [CHAT] §3map: §bParty Games
+[09:32:42] [Server thread/INFO]: Saving and pausing game...
+[09:32:43] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[09:32:44] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[09:32:44] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End
+[09:33:30] [Server thread/INFO]: Stopping server
+[09:33:30] [Server thread/INFO]: Saving players
+[09:33:30] [Server thread/INFO]: Saving worlds
+[09:33:30] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[09:33:30] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[09:33:30] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End
+[09:33:31] [Client thread/INFO]: Stopping!
+[09:33:31] [Client thread/INFO]: SoundSystem shutting down...
+[09:33:32] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
