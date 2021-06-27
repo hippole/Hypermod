@@ -33388,6 +33388,7 @@ RENAME MAP: param net/minecraft/world/storage/WorldInfo/WorldInfo (Lnet/minecraf
 RENAME MAP: param net/minecraft/world/storage/WorldInfo/WorldInfo (Lnet/minecraft/world/WorldSettings;Ljava/lang/String;)V 1 -> p_i2158_2_
 RENAME MAP: param net/minecraft/world/storage/WorldInfo/WorldInfo (Lnet/minecraft/world/storage/WorldInfo;)V 0 -> p_i2159_1_
 Start Processing: io\github\Hypermnesiaa\hypermod\Hypermod.java
+Warning: io\github\Hypermnesiaa\hypermod\Hypermod.java has CRLF line endings; consider switching to LF
 [method, io/github/Hypermnesiaa/hypermod/Hypermod/init, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
 No rename for class net/minecraftforge/fml/common/event/FMLInitializationEvent
 No rename for class net/minecraftforge/fml/common/FMLCommonHandler
