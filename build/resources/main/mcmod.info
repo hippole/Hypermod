@@ -1,0 +1,16 @@
+[
+{
+  "modid": "hypermod",
+  "name": "Hypermod",
+  "description": " >>>-[Commands:(randomword,coordinates,hypixelstatus,apikey)] -<<< Made by Hypermnesia.",
+  "version": "1.4-BETA",
+  "mcversion": "1.8.9",
+  "url": "https://www.youtube.com/channel/UCWPhqYKmf1diKtcEKEct1SQ",
+  "updateUrl": "https://www.youtube.com/watch?v=OBQE_TNI7zw",
+  "authorList": ["Hypermnesia"],
+  "credits": "My sanity.",
+  "logoFile": "assets/hypermod/chimkim.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
