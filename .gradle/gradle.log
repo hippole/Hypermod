@@ -5,20 +5,20 @@ Version string 'unspecified' does not match SemVer specification
 You should try SemVer : http://semver.org/
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
-:sourceApiJava
+:sourceApiJava UP-TO-DATE
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava
+:sourceMainJava UP-TO-DATE
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
 Note: C:\Users\Kyle\Downloads\Hypermod\build\sources\main\java\io\github\Hypermnesiaa\hypermod\Hypermod.java uses or overrides a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 1 warning
 
-:processResources
+:processResources UP-TO-DATE
 :classes
 :jar
-:sourceTestJava
+:sourceTestJava UP-TO-DATE
 :compileTestJava UP-TO-DATE
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
@@ -31,13 +31,12 @@ Note: Recompile with -Xlint:deprecation for details.
 :reobfJar
 :extractRangemapReplacedMain
 C:\Users\Kyle\Downloads\Hypermod\build\sources\main\java
-:retromapReplacedMain
-remapping source...
-:sourceJar
+:retromapReplacedMain UP-TO-DATE
+:sourceJar UP-TO-DATE
 :assemble
 :check UP-TO-DATE
 :build
 
 BUILD SUCCESSFUL
 
-Total time: 17.501 secs
+Total time: 11.904 secs

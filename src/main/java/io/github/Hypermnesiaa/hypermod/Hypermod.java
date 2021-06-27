@@ -7,11 +7,11 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
-@Mod(modid = Hypermod.MODID, version = Hypermod.VERSION)
+@Mod(modid = Hypermod.MODID, version = Hypermod.VERSION, clientSideOnly = true)
 public class Hypermod {
 
     public static final String MODID = "hypermod";
-    public static final String VERSION = "1.4";
+    public static final String VERSION = "1.4-BETA";
 
     private final randomWord randomWord = new randomWord();
     private final coordinates coordinates = new coordinates();

@@ -33403,19 +33403,19 @@ No rename for field net/minecraftforge/common/MinecraftForge/EVENT_BUS
 No rename for method net/minecraftforge/fml/common/eventhandler/EventBus/register (Ljava/lang/Object;)V
 No rename for class net/minecraftforge/client/ClientCommandHandler
 No rename for field net/minecraftforge/client/ClientCommandHandler/instance
-Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1075,1090]::registerCommand->func_71560_a
+Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1103,1118]::registerCommand->func_71560_a
 No rename for class net/minecraftforge/client/ClientCommandHandler
 No rename for field net/minecraftforge/client/ClientCommandHandler/instance
-Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1143,1158]::registerCommand->func_71560_a
+Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1171,1186]::registerCommand->func_71560_a
 No rename for class net/minecraftforge/client/ClientCommandHandler
 No rename for field net/minecraftforge/client/ClientCommandHandler/instance
-Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1212,1227]::registerCommand->func_71560_a
+Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1240,1255]::registerCommand->func_71560_a
 No rename for class net/minecraftforge/client/ClientCommandHandler
 No rename for field net/minecraftforge/client/ClientCommandHandler/instance
-Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1277,1292]::registerCommand->func_71560_a
+Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1305,1320]::registerCommand->func_71560_a
 No rename for class net/minecraftforge/client/ClientCommandHandler
 No rename for field net/minecraftforge/client/ClientCommandHandler/instance
-Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1348,1363]::registerCommand->func_71560_a
+Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1376,1391]::registerCommand->func_71560_a
 [method, java/io/PrintStream/println, (Ljava/lang/String;)V]
 [method, java/lang/Throwable/printStackTrace, ()V]
 Adding 0 imports
@@ -33488,13 +33488,13 @@ End  Processing: io\github\Hypermnesiaa\hypermod\coordinates.java
 
 Start Processing: io\github\Hypermnesiaa\hypermod\hypixelStatus.java
 Warning: io\github\Hypermnesiaa\hypermod\hypixelStatus.java has CRLF line endings; consider switching to LF
-Rename method net/minecraft/command/ICommand/getCommandName ()Ljava/lang/String;[522,536]::getCommandName->func_71517_b
-Rename method net/minecraft/command/ICommand/getCommandUsage (Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;[610,625]::getCommandUsage->func_71518_a
-Rename class net/minecraft/command/ICommandSender[623,637]::ICommandSender->ICommandSender
-Rename method net/minecraft/command/CommandBase/getRequiredPermissionLevel ()I[724,750]::getRequiredPermissionLevel->func_82362_a
-Rename method net/minecraft/command/ICommand/processCommand (Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V[797,811]::processCommand->func_71515_b
-Rename class net/minecraft/command/ICommandSender[810,824]::ICommandSender->ICommandSender
-Rename class net/minecraft/command/CommandException[855,871]::CommandException->CommandException
+Rename method net/minecraft/command/ICommand/getCommandName ()Ljava/lang/String;[521,535]::getCommandName->func_71517_b
+Rename method net/minecraft/command/ICommand/getCommandUsage (Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;[609,624]::getCommandUsage->func_71518_a
+Rename class net/minecraft/command/ICommandSender[622,636]::ICommandSender->ICommandSender
+Rename method net/minecraft/command/CommandBase/getRequiredPermissionLevel ()I[723,749]::getRequiredPermissionLevel->func_82362_a
+Rename method net/minecraft/command/ICommand/processCommand (Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V[796,810]::processCommand->func_71515_b
+Rename class net/minecraft/command/ICommandSender[809,823]::ICommandSender->ICommandSender
+Rename class net/minecraft/command/CommandException[854,870]::CommandException->CommandException
 [method, java/net/URL/openConnection, ()Ljava/net/URLConnection;]
 [method, java/net/URLConnection/getInputStream, ()Ljava/io/InputStream;]
 [method, java/io/BufferedReader/readLine, ()Ljava/lang/String;]
@@ -33514,91 +33514,91 @@ Rename class net/minecraft/command/CommandException[855,871]::CommandException->
 [method, org/json/JSONObject/getString, (Ljava/lang/String;)Ljava/lang/String;]
 [method, org/json/JSONObject/getString, (Ljava/lang/String;)Ljava/lang/String;]
 [method, org/json/JSONObject/getString, (Ljava/lang/String;)Ljava/lang/String;]
-Rename class net/minecraft/client/Minecraft[2701,2710]::Minecraft->Minecraft
-Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[2711,2723]::getMinecraft->func_71410_x
-Rename field net/minecraft/client/Minecraft/thePlayer[2726,2735]::thePlayer->field_71439_g
-Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[2740,2754]::addChatMessage->func_145747_a
-Rename class net/minecraft/util/ChatComponentText[2758,2775]::ChatComponentText->ChatComponentText
-Rename class net/minecraft/util/EnumChatFormatting[2776,2794]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/GOLD[2795,2799]::GOLD->GOLD
-Rename class net/minecraft/util/EnumChatFormatting[2832,2850]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/GREEN[2851,2856]::GREEN->GREEN
-Rename class net/minecraft/util/EnumChatFormatting[2866,2884]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/DARK_GREEN[2885,2895]::DARK_GREEN->DARK_GREEN
-Rename class net/minecraft/util/EnumChatFormatting[2958,2976]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[2977,2986]::DARK_AQUA->DARK_AQUA
-Rename class net/minecraft/util/EnumChatFormatting[3000,3018]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/AQUA[3019,3023]::AQUA->AQUA
-Rename class net/minecraft/util/EnumChatFormatting[3040,3058]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[3059,3068]::DARK_AQUA->DARK_AQUA
-Rename class net/minecraft/util/EnumChatFormatting[3086,3104]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/AQUA[3105,3109]::AQUA->AQUA
-Rename class net/minecraft/util/EnumChatFormatting[3162,3180]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[3181,3190]::DARK_AQUA->DARK_AQUA
-Rename class net/minecraft/util/EnumChatFormatting[3204,3222]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/AQUA[3223,3227]::AQUA->AQUA
-Rename class net/minecraft/util/EnumChatFormatting[3244,3262]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[3263,3272]::DARK_AQUA->DARK_AQUA
-Rename class net/minecraft/util/EnumChatFormatting[3285,3303]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/AQUA[3304,3308]::AQUA->AQUA
-Rename class net/minecraft/util/EnumChatFormatting[3324,3342]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/GOLD[3343,3347]::GOLD->GOLD
-Rename class net/minecraft/client/Minecraft[3460,3469]::Minecraft->Minecraft
-Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[3470,3482]::getMinecraft->func_71410_x
-Rename field net/minecraft/client/Minecraft/thePlayer[3485,3494]::thePlayer->field_71439_g
-Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[3499,3513]::addChatMessage->func_145747_a
-Rename class net/minecraft/util/ChatComponentText[3517,3534]::ChatComponentText->ChatComponentText
-Rename class net/minecraft/util/EnumChatFormatting[3535,3553]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/GOLD[3554,3558]::GOLD->GOLD
-Rename class net/minecraft/util/EnumChatFormatting[3591,3609]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/GREEN[3610,3615]::GREEN->GREEN
-Rename class net/minecraft/util/EnumChatFormatting[3625,3643]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/DARK_GREEN[3644,3654]::DARK_GREEN->DARK_GREEN
-Rename class net/minecraft/util/EnumChatFormatting[3717,3735]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[3736,3745]::DARK_AQUA->DARK_AQUA
-Rename class net/minecraft/util/EnumChatFormatting[3759,3777]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/AQUA[3778,3782]::AQUA->AQUA
-Rename class net/minecraft/util/EnumChatFormatting[3799,3817]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[3818,3827]::DARK_AQUA->DARK_AQUA
-Rename class net/minecraft/util/EnumChatFormatting[3845,3863]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/AQUA[3864,3868]::AQUA->AQUA
-Rename class net/minecraft/util/EnumChatFormatting[3921,3939]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[3940,3949]::DARK_AQUA->DARK_AQUA
-Rename class net/minecraft/util/EnumChatFormatting[3963,3981]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/AQUA[3982,3986]::AQUA->AQUA
-Rename class net/minecraft/util/EnumChatFormatting[4003,4021]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/GOLD[4022,4026]::GOLD->GOLD
-Rename class net/minecraft/client/Minecraft[4126,4135]::Minecraft->Minecraft
-Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[4136,4148]::getMinecraft->func_71410_x
-Rename field net/minecraft/client/Minecraft/thePlayer[4151,4160]::thePlayer->field_71439_g
-Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[4165,4179]::addChatMessage->func_145747_a
-Rename class net/minecraft/util/ChatComponentText[4183,4200]::ChatComponentText->ChatComponentText
-Rename class net/minecraft/util/EnumChatFormatting[4201,4219]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/RED[4220,4223]::RED->RED
-Rename class net/minecraft/util/EnumChatFormatting[4279,4297]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/RED[4298,4301]::RED->RED
-Rename class net/minecraft/util/EnumChatFormatting[4354,4372]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/RED[4373,4376]::RED->RED
-Rename class net/minecraft/util/EnumChatFormatting[4405,4423]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/RED[4424,4427]::RED->RED
-Rename class net/minecraft/util/EnumChatFormatting[4462,4480]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/RED[4481,4484]::RED->RED
-Rename class net/minecraft/util/EnumChatFormatting[4547,4565]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/RED[4566,4569]::RED->RED
-Rename class net/minecraft/client/Minecraft[4700,4709]::Minecraft->Minecraft
-Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[4710,4722]::getMinecraft->func_71410_x
-Rename field net/minecraft/client/Minecraft/thePlayer[4725,4734]::thePlayer->field_71439_g
-Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[4739,4753]::addChatMessage->func_145747_a
-Rename class net/minecraft/util/ChatComponentText[4757,4774]::ChatComponentText->ChatComponentText
-Rename class net/minecraft/util/EnumChatFormatting[4775,4793]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/RED[4794,4797]::RED->RED
-Rename class net/minecraft/client/Minecraft[4885,4894]::Minecraft->Minecraft
-Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[4895,4907]::getMinecraft->func_71410_x
-Rename field net/minecraft/client/Minecraft/thePlayer[4910,4919]::thePlayer->field_71439_g
-Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[4924,4938]::addChatMessage->func_145747_a
-Rename class net/minecraft/util/ChatComponentText[4942,4959]::ChatComponentText->ChatComponentText
-Rename class net/minecraft/util/EnumChatFormatting[4960,4978]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/RED[4979,4982]::RED->RED
+Rename class net/minecraft/client/Minecraft[2700,2709]::Minecraft->Minecraft
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[2710,2722]::getMinecraft->func_71410_x
+Rename field net/minecraft/client/Minecraft/thePlayer[2725,2734]::thePlayer->field_71439_g
+Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[2739,2753]::addChatMessage->func_145747_a
+Rename class net/minecraft/util/ChatComponentText[2757,2774]::ChatComponentText->ChatComponentText
+Rename class net/minecraft/util/EnumChatFormatting[2775,2793]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/GOLD[2794,2798]::GOLD->GOLD
+Rename class net/minecraft/util/EnumChatFormatting[2831,2849]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/GREEN[2850,2855]::GREEN->GREEN
+Rename class net/minecraft/util/EnumChatFormatting[2865,2883]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/DARK_GREEN[2884,2894]::DARK_GREEN->DARK_GREEN
+Rename class net/minecraft/util/EnumChatFormatting[2957,2975]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[2976,2985]::DARK_AQUA->DARK_AQUA
+Rename class net/minecraft/util/EnumChatFormatting[2999,3017]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/AQUA[3018,3022]::AQUA->AQUA
+Rename class net/minecraft/util/EnumChatFormatting[3039,3057]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[3058,3067]::DARK_AQUA->DARK_AQUA
+Rename class net/minecraft/util/EnumChatFormatting[3085,3103]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/AQUA[3104,3108]::AQUA->AQUA
+Rename class net/minecraft/util/EnumChatFormatting[3161,3179]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[3180,3189]::DARK_AQUA->DARK_AQUA
+Rename class net/minecraft/util/EnumChatFormatting[3203,3221]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/AQUA[3222,3226]::AQUA->AQUA
+Rename class net/minecraft/util/EnumChatFormatting[3243,3261]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[3262,3271]::DARK_AQUA->DARK_AQUA
+Rename class net/minecraft/util/EnumChatFormatting[3284,3302]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/AQUA[3303,3307]::AQUA->AQUA
+Rename class net/minecraft/util/EnumChatFormatting[3323,3341]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/GOLD[3342,3346]::GOLD->GOLD
+Rename class net/minecraft/client/Minecraft[3459,3468]::Minecraft->Minecraft
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[3469,3481]::getMinecraft->func_71410_x
+Rename field net/minecraft/client/Minecraft/thePlayer[3484,3493]::thePlayer->field_71439_g
+Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[3498,3512]::addChatMessage->func_145747_a
+Rename class net/minecraft/util/ChatComponentText[3516,3533]::ChatComponentText->ChatComponentText
+Rename class net/minecraft/util/EnumChatFormatting[3534,3552]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/GOLD[3553,3557]::GOLD->GOLD
+Rename class net/minecraft/util/EnumChatFormatting[3590,3608]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/GREEN[3609,3614]::GREEN->GREEN
+Rename class net/minecraft/util/EnumChatFormatting[3624,3642]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/DARK_GREEN[3643,3653]::DARK_GREEN->DARK_GREEN
+Rename class net/minecraft/util/EnumChatFormatting[3716,3734]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[3735,3744]::DARK_AQUA->DARK_AQUA
+Rename class net/minecraft/util/EnumChatFormatting[3758,3776]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/AQUA[3777,3781]::AQUA->AQUA
+Rename class net/minecraft/util/EnumChatFormatting[3798,3816]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[3817,3826]::DARK_AQUA->DARK_AQUA
+Rename class net/minecraft/util/EnumChatFormatting[3844,3862]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/AQUA[3863,3867]::AQUA->AQUA
+Rename class net/minecraft/util/EnumChatFormatting[3920,3938]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/DARK_AQUA[3939,3948]::DARK_AQUA->DARK_AQUA
+Rename class net/minecraft/util/EnumChatFormatting[3962,3980]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/AQUA[3981,3985]::AQUA->AQUA
+Rename class net/minecraft/util/EnumChatFormatting[4002,4020]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/GOLD[4021,4025]::GOLD->GOLD
+Rename class net/minecraft/client/Minecraft[4125,4134]::Minecraft->Minecraft
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[4135,4147]::getMinecraft->func_71410_x
+Rename field net/minecraft/client/Minecraft/thePlayer[4150,4159]::thePlayer->field_71439_g
+Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[4164,4178]::addChatMessage->func_145747_a
+Rename class net/minecraft/util/ChatComponentText[4182,4199]::ChatComponentText->ChatComponentText
+Rename class net/minecraft/util/EnumChatFormatting[4200,4218]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/RED[4219,4222]::RED->RED
+Rename class net/minecraft/util/EnumChatFormatting[4278,4296]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/RED[4297,4300]::RED->RED
+Rename class net/minecraft/util/EnumChatFormatting[4353,4371]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/RED[4372,4375]::RED->RED
+Rename class net/minecraft/util/EnumChatFormatting[4404,4422]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/RED[4423,4426]::RED->RED
+Rename class net/minecraft/util/EnumChatFormatting[4461,4479]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/RED[4480,4483]::RED->RED
+Rename class net/minecraft/util/EnumChatFormatting[4546,4564]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/RED[4565,4568]::RED->RED
+Rename class net/minecraft/client/Minecraft[4699,4708]::Minecraft->Minecraft
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[4709,4721]::getMinecraft->func_71410_x
+Rename field net/minecraft/client/Minecraft/thePlayer[4724,4733]::thePlayer->field_71439_g
+Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[4738,4752]::addChatMessage->func_145747_a
+Rename class net/minecraft/util/ChatComponentText[4756,4773]::ChatComponentText->ChatComponentText
+Rename class net/minecraft/util/EnumChatFormatting[4774,4792]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/RED[4793,4796]::RED->RED
+Rename class net/minecraft/client/Minecraft[4884,4893]::Minecraft->Minecraft
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[4894,4906]::getMinecraft->func_71410_x
+Rename field net/minecraft/client/Minecraft/thePlayer[4909,4918]::thePlayer->field_71439_g
+Rename method net/minecraft/command/ICommandSender/addChatMessage (Lnet/minecraft/util/IChatComponent;)V[4923,4937]::addChatMessage->func_145747_a
+Rename class net/minecraft/util/ChatComponentText[4941,4958]::ChatComponentText->ChatComponentText
+Rename class net/minecraft/util/EnumChatFormatting[4959,4977]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/RED[4978,4981]::RED->RED
 Import: net.minecraft.client.Minecraft
 Import: net.minecraft.command.CommandBase
 Import: net.minecraft.command.CommandException
