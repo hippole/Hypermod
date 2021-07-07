@@ -1,3 +1,50 @@
-[21:52:04] [Client thread/INFO]: Setting user: Player471
-[21:52:08] [Client thread/INFO]: LWJGL Version: 2.9.4
-[21:52:13] [Client thread/INFO]: Reloading ResourceManager: Default
+[20:12:29] [Client thread/INFO]: Setting user: Player205
+[20:12:33] [Client thread/INFO]: LWJGL Version: 2.9.4
+[20:12:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hypermod
+[20:12:43] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:12:44] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[20:12:44] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:12:44] [Thread-9/INFO]: OpenAL initialized.
+[20:12:44] [Sound Library Loader/INFO]: Sound engine started
+[20:12:47] [Client thread/WARN]: File hypermod:sounds/hypermod/theMoon.ogg does not exist, cannot add it to event hypermod:hypermod.themoon
+[20:12:54] [Client thread/INFO]: Created: 16x16 textures-atlas
+[20:12:57] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hypermod
+[20:12:57] [Client thread/INFO]: SoundSystem shutting down...
+[20:12:57] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[20:12:57] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:12:58] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[20:12:58] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:12:58] [Thread-11/INFO]: OpenAL initialized.
+[20:12:58] [Sound Library Loader/INFO]: Sound engine started
+[20:13:00] [Client thread/WARN]: File hypermod:sounds/hypermod/theMoon.ogg does not exist, cannot add it to event hypermod:hypermod.themoon
+[20:13:08] [Client thread/INFO]: Created: 512x512 textures-atlas
+[20:13:35] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[20:13:35] [Server thread/INFO]: Generating keypair
+[20:13:36] [Server thread/INFO]: Preparing start region for level 0
+[20:13:37] [Server thread/INFO]: Preparing spawn area: 34%
+[20:13:38] [Server thread/INFO]: Preparing spawn area: 81%
+[20:13:39] [Server thread/INFO]: Changing view distance to 2, from 10
+[20:13:41] [Server thread/INFO]: Player205[local:E:ad69f532] logged in with entity id 208 at (229.50411476418947, 66.15092016131673, 285.4651503072796)
+[20:13:41] [Server thread/INFO]: Player205 joined the game
+[20:13:42] [Server thread/INFO]: Saving and pausing game...
+[20:13:42] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[20:13:42] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[20:13:42] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End
+[20:13:56] [Server thread/INFO]: <Player205> You earned 69
+[20:13:56] [Client thread/INFO]: [CHAT] geexp gained 69
+[20:13:56] [Client thread/INFO]: [CHAT] <Player205> You earned 69
+[20:13:59] [Client thread/INFO]: [CHAT] §acurrent gexp for dis session §269
+[20:14:10] [Server thread/INFO]: <Player205> You earned 420
+[20:14:10] [Client thread/INFO]: [CHAT] geexp gained 420
+[20:14:10] [Client thread/INFO]: [CHAT] <Player205> You earned 420
+[20:14:15] [Client thread/INFO]: [CHAT] §acurrent gexp for dis session §2489
+[20:14:31] [Server thread/INFO]: Saving and pausing game...
+[20:14:31] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[20:14:31] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[20:14:31] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End
+[20:17:19] [Server thread/INFO]: <Player205> You earned ogfqehwfe
+[20:17:19] [Client thread/INFO]: [CHAT] <Player205> You earned ogfqehwfe
+[20:17:20] [Server thread/INFO]: Saving and pausing game...
+[20:17:20] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[20:17:20] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[20:17:20] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End

@@ -33404,19 +33404,19 @@ No rename for field net/minecraftforge/common/MinecraftForge/EVENT_BUS
 No rename for method net/minecraftforge/fml/common/eventhandler/EventBus/register (Ljava/lang/Object;)V
 No rename for class net/minecraftforge/client/ClientCommandHandler
 No rename for field net/minecraftforge/client/ClientCommandHandler/instance
-Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1103,1118]::registerCommand->func_71560_a
+Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1105,1120]::registerCommand->func_71560_a
 No rename for class net/minecraftforge/client/ClientCommandHandler
 No rename for field net/minecraftforge/client/ClientCommandHandler/instance
-Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1171,1186]::registerCommand->func_71560_a
+Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1173,1188]::registerCommand->func_71560_a
 No rename for class net/minecraftforge/client/ClientCommandHandler
 No rename for field net/minecraftforge/client/ClientCommandHandler/instance
-Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1240,1255]::registerCommand->func_71560_a
+Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1242,1257]::registerCommand->func_71560_a
 No rename for class net/minecraftforge/client/ClientCommandHandler
 No rename for field net/minecraftforge/client/ClientCommandHandler/instance
-Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1305,1320]::registerCommand->func_71560_a
+Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1307,1322]::registerCommand->func_71560_a
 No rename for class net/minecraftforge/client/ClientCommandHandler
 No rename for field net/minecraftforge/client/ClientCommandHandler/instance
-Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1376,1391]::registerCommand->func_71560_a
+Rename method net/minecraft/command/CommandHandler/registerCommand (Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;[1378,1393]::registerCommand->func_71560_a
 [method, java/io/PrintStream/println, (Ljava/lang/String;)V]
 [method, java/lang/Throwable/printStackTrace, ()V]
 Adding 0 imports
