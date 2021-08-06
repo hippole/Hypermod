@@ -1,5 +1,5 @@
 WARNING: You are using an unsupported version of ForgeGradle.
-Please consider upgrading to ForgeGradle 4 and helping in the efforts to get old versions working on the modern toolchain.
+Please consider upgrading to ForgeGradle 5 and helping in the efforts to get old versions working on the modern toolchain.
 See https://gist.github.com/TheCurle/fe7ad3ede188cbdd15c235cc75d52d4a for more info on contributing.
 Version string 'unspecified' does not match SemVer specification 
 You should try SemVer : http://semver.org/
@@ -9,8 +9,10 @@ You should try SemVer : http://semver.org/
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava
+:sourceMainJava UP-TO-DATE
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
 1 warning
 
 :processResources UP-TO-DATE
@@ -33,4 +35,4 @@ You should try SemVer : http://semver.org/
 
 BUILD SUCCESSFUL
 
-Total time: 10.073 secs
+Total time: 10.042 secs

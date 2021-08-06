@@ -101,6 +101,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -122,14 +129,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/run" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kyle\Downloads\Hypermod\run" />
+      <recent name="C:\Users\Kyle\Downloads\Hypermod\run\config" />
+      <recent name="C:\Users\Kyle\Downloads\Hypermod\run\mods" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kyle\Downloads\Hypermod\src\main\resources\assets\hypermod\sounds" />
       <recent name="C:\Users\Kyle\Downloads\Hypermod\src\main\java\io\github\Hypermnesiaa\hypermod\Utils" />
       <recent name="C:\Users\Kyle\Downloads\Hypermod\build\libs\old" />
       <recent name="C:\Users\Kyle\Downloads\Hypermod-main\Hypermod-main\src\main\java\io\github\Hypermnesiaa" />
@@ -251,8 +264,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Hypermod [build]" />
         <item itemvalue="Gradle.Hypermod [runClient]" />
+        <item itemvalue="Gradle.Hypermod [build]" />
         <item itemvalue="Gradle.Hypermod [setupDecompWorkspace]" />
         <item itemvalue="Gradle.Hypermod" />
         <item itemvalue="Gradle.Hypermod [cleanCache]" />
@@ -286,5 +299,16 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/github/Hypermnesiaa/hypermod/Utils/Define.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
