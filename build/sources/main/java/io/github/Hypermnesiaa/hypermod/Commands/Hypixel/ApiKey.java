@@ -21,7 +21,7 @@ public class ApiKey extends CommandBase {
 
     @Override
     public String getCommandUsage(ICommandSender sender) {
-        return "how did you get this?";
+        return "/hypermod " + getCommandName();
     }
 
     @Override

@@ -24,8 +24,8 @@ public class GEXP extends CommandBase {
     public void ClientChatReceivedEvent(ClientChatReceivedEvent event) {
         String message = event.message.getUnformattedText();
         try {
-            if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
-                if (message.contains("You earned ") && message.contains(" GEXP from playing")) {
+            if (message.contains("You earned ") && message.contains(" GEXP from playing")) {
+                if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
                     try {
                         int GEXPEarned = Integer.parseInt(message.split(" ")[2]);
                         int XP = hypermod.GEXP + GEXPEarned;
@@ -33,20 +33,20 @@ public class GEXP extends CommandBase {
                     } catch (NumberFormatException e) {
                         return;
                     }
-                }
-                if (message.contains("Reward Summary")) {
-                    String msg = message.split(" ")[56];
-                    String str = msg.substring(2);
-                    try {
-                        int GEXPEarned = Integer.parseInt(str);
-                        int XP = hypermod.GEXP + GEXPEarned;
-                        hypermod.GEXP = XP;
-                    } catch (NumberFormatException e) {
-                        return;
+                    if (message.contains("Reward Summary")) {
+                        String msg = message.split(" ")[56];
+                        String str = msg.substring(2);
+                        try {
+                            int GEXPEarned = Integer.parseInt(str);
+                            int XP = hypermod.GEXP + GEXPEarned;
+                            hypermod.GEXP = XP;
+                        } catch (NumberFormatException e) {
+                            return;
+                        }
                     }
+                } else {
+                    System.err.println("Server is not Hypixel! Canceling Action.");
                 }
-            } else {
-                System.err.println("Server is not Hypixel! Canceling Action.");
             }
         } catch (NullPointerException e) {
             System.err.println("Player is in a singleplayer world! Canceling action.");
@@ -60,7 +60,7 @@ public class GEXP extends CommandBase {
 
     @Override
     public String getCommandUsage(ICommandSender sender) {
-        return "how did you get this?";
+        return "/hypermod " + getCommandName();
     }
 
     @Override

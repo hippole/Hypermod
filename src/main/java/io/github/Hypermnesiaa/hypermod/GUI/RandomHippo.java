@@ -7,13 +7,11 @@ import net.minecraft.client.gui.ScaledResolution;
 
 public class RandomHippo extends Gui {
 
-    String text = "hippo";
-
     public RandomHippo (Minecraft mc) {
         if (ConfigHandler.randomHippoInBottomLeftCornerEnabled) {
-            ScaledResolution scaled = new ScaledResolution(mc);
-            drawCenteredString(mc.fontRendererObj, text, 14, 374, Integer.parseInt("AAAAAA", 16));
+            drawCenteredString(mc.fontRendererObj, "hippo", 14, 516, Integer.parseInt("AAAAAA", 16));
             //Note: gotta make this work on all resolutions
+            //Note2: idfk how to do that someone please help me
         }
     }
 }
