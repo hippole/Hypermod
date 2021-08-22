@@ -1,11 +1,8 @@
 {
-   "themoon":{
-      "category":"master",
-      "sounds":[
-         {
-            "name":"themoon",
-            "stream":false
-         }
-      ]
-   }
+  "fancy": {
+    "category": "master",
+    "sounds": [
+      "command/fancy"
+    ]
+  }
 }

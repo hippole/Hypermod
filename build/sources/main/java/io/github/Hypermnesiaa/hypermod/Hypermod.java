@@ -1,8 +1,8 @@
 package io.github.Hypermnesiaa.hypermod;
 
+import io.github.Hypermnesiaa.hypermod.Commands.Fancy;
 import io.github.Hypermnesiaa.hypermod.Commands.Hypixel.*;
 import io.github.Hypermnesiaa.hypermod.Commands.RandomWord;
-import io.github.Hypermnesiaa.hypermod.Commands.TheMoon;
 import io.github.Hypermnesiaa.hypermod.Utils.ConfigHandler;
 import io.github.Hypermnesiaa.hypermod.Utils.Define;
 import io.github.Hypermnesiaa.hypermod.Utils.RenderGuiHandler;
@@ -26,11 +26,11 @@ public class Hypermod extends CommandBase {
     public static int GEXP = 0;
 
     public static final String MODID = "hypermod";
-    public static final String VERSION = "1.7-BETA";
+    public static final String VERSION = "1.8-BETA";
 
     private final RandomWord randomWord = new RandomWord();
     private final Coordinates coordinates = new Coordinates();
-    private final TheMoon theMoon = new TheMoon();
+    private final Fancy fancy = new Fancy();
     private final HypixelStatus hypixelStatus = new HypixelStatus();
     private final ApiKey apiKey = new ApiKey();
     private final GEXP gexp = new GEXP(this);
@@ -45,7 +45,7 @@ public class Hypermod extends CommandBase {
         try {
             ClientCommandHandler.instance.registerCommand(randomWord);
             ClientCommandHandler.instance.registerCommand(coordinates);
-            ClientCommandHandler.instance.registerCommand(theMoon);
+            ClientCommandHandler.instance.registerCommand(fancy);
             ClientCommandHandler.instance.registerCommand(hypixelStatus);
             ClientCommandHandler.instance.registerCommand(apiKey);
             ClientCommandHandler.instance.registerCommand(gexp);
@@ -114,6 +114,9 @@ public class Hypermod extends CommandBase {
         }
         else if (args[0].equalsIgnoreCase("reque")) {
             addNewCommandHelp("reque","/reque <*Optional:GAMEMODE> | /rq","Instantly sends you into a minigame of your choice (Specify default minigame in \"Hypermod.cfg\"",false);
+        }
+        else if (args[0].equalsIgnoreCase("fancy")) {
+            addNewCommandHelp("fancy","/fancy","Fancy!.",false);
         } else {
             define.simpleSendMessage("red","[ERROR] Not a valid command/feature! Take a look at Hypermod in your mod options to find commands.");
         }

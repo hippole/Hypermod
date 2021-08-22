@@ -3,7 +3,6 @@ package io.github.Hypermnesiaa.hypermod.GUI;
 import io.github.Hypermnesiaa.hypermod.Utils.ConfigHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
-import net.minecraft.client.gui.ScaledResolution;
 
 public class RandomHippo extends Gui {
 

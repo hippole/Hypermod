@@ -15,159 +15,24 @@ Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 1 warning
 
-:processResources UP-TO-DATE
+:processResources
 :classes
 :jar
+:sourceTestJava UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+:extractMcpData SKIPPED
+:extractMcpMappings SKIPPED
 :getVersionJson
-:extractNatives SKIPPED
 :extractUserdev UP-TO-DATE
-:getAssetIndex UP-TO-DATE
-:getAssets
-Current status: 528/734   71%
-Current status: 538/734   73%
-Current status: 605/734   82%
-:makeStart
-:runClient
-2021-08-19 20:46:33,893 WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
-2021-08-19 20:46:33,897 WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
-[20:46:34] [main/INFO] [GradleStart]: Extra: []
-[20:46:34] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Hypermnesia/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken{REDACTED}, --version, 1.8.9, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[20:46:34] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[20:46:34] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[20:46:34] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[20:46:34] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[20:46:34] [main/INFO] [FML]: Forge Mod Loader version 11.15.1.2318 for Minecraft 1.8.9 loading
-[20:46:34] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_281, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_281\jre
-[20:46:34] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[20:46:34] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[20:46:34] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[20:46:34] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[20:46:34] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[20:46:34] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[20:46:34] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[20:46:34] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[20:46:34] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[20:46:34] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[20:46:34] [main/ERROR] [FML]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
-[20:46:36] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[20:46:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[20:46:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[20:46:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[20:46:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[20:46:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[20:46:37] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-2021-08-19 20:46:38,349 WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
-2021-08-19 20:46:38,433 WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
-2021-08-19 20:46:38,441 WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
-[20:46:39] [Client thread/INFO]: Setting user: Player287
-[20:46:45] [Client thread/INFO]: LWJGL Version: 2.9.4
-[20:46:47] [Client thread/WARN] [FML]: =============================================================
-[20:46:47] [Client thread/WARN] [FML]: MOD HAS DIRECT REFERENCE System.exit() THIS IS NOT ALLOWED REROUTING TO FML!
-[20:46:47] [Client thread/WARN] [FML]: Offendor: com/sun/jna/Native.main([Ljava/lang/String;)V
-[20:46:47] [Client thread/WARN] [FML]: Use FMLCommonHandler.exitJava instead
-[20:46:47] [Client thread/WARN] [FML]: =============================================================
-[20:46:47] [Client thread/INFO] [STDOUT]: [net.minecraftforge.fml.client.SplashProgress:start:246]: ---- Minecraft Crash Report ----
-// There are four lights!
+:genSrgs SKIPPED
+:reobfJar
+:assemble
+:check UP-TO-DATE
+:build
 
-Time: 8/19/21 8:46 PM
-Description: Loading screen debug info
+BUILD SUCCESSFUL
 
-This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
-
-
-A detailed walkthrough of the error, its code path and all known details is as follows:
----------------------------------------------------------------------------------------
-
--- System Details --
-Details:
-	Minecraft Version: 1.8.9
-	Operating System: Windows 10 (amd64) version 10.0
-	Java Version: 1.8.0_281, Oracle Corporation
-	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 710016552 bytes (677 MB) / 1029177344 bytes (981 MB) up to 1029177344 bytes (981 MB)
-	JVM Flags: 2 total; -Xms1024m -Xmx1024m
-	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
-	FML: 
-	Loaded coremods (and transformers): 
-	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '4.5.13397 Compatibility Profile Context 15.200.1055.0' Renderer: 'AMD Radeon HD 8550G'
-[20:46:48] [Client thread/INFO] [FML]: MinecraftForge v11.15.1.2318 Initialized
-[20:46:48] [Client thread/INFO] [FML]: Replaced 229 ore recipies
-[20:46:49] [Client thread/INFO] [FML]: Found 0 mods from the command line. Injecting into mod discoverer
-[20:46:49] [Client thread/INFO] [FML]: Searching C:\Users\Hypermnesia\IdeaProjects\Hypermod\run\mods for mods
-[20:46:52] [Client thread/INFO] [FML]: Forge Mod Loader has identified 4 mods to load
-[20:46:53] [Client thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge, hypermod] at CLIENT
-[20:46:53] [Client thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge, hypermod] at SERVER
-[20:46:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hypermod
-[20:46:54] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
-[20:46:54] [Client thread/INFO] [FML]: Found 384 ObjectHolder annotations
-[20:46:54] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
-[20:46:54] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
-[20:46:54] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
-[20:46:54] [Forge Version Check/INFO] [ForgeVersionCheck]: [Forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[20:46:54] [Client thread/INFO] [FML]: Applying holder lookups
-[20:46:54] [Client thread/INFO] [FML]: Holder lookups applied
-[20:46:54] [Client thread/INFO] [FML]: Injecting itemstacks
-[20:46:54] [Client thread/INFO] [FML]: Itemstack injection complete
-[20:46:55] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[20:46:55] [Thread-9/INFO]: Initializing LWJGL OpenAL
-[20:46:55] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[20:46:55] [Thread-9/INFO]: OpenAL initialized.
-[20:46:55] [Sound Library Loader/INFO]: Sound engine started
-[20:47:09] [Client thread/INFO] [FML]: Max texture size: 16384
-[20:47:09] [Client thread/INFO]: Created: 16x16 textures-atlas
-[20:47:11] [Client thread/INFO] [FML]: Injecting itemstacks
-[20:47:11] [Client thread/INFO] [FML]: Itemstack injection complete
-[20:47:12] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 4 mods
-[20:47:12] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hypermod
-[20:47:12] [Client thread/INFO]: SoundSystem shutting down...
-[20:47:12] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[20:47:12] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[20:47:12] [Thread-11/INFO]: Initializing LWJGL OpenAL
-[20:47:12] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[20:47:12] [Thread-11/INFO]: OpenAL initialized.
-[20:47:13] [Sound Library Loader/INFO]: Sound engine started
-[20:47:23] [Client thread/INFO] [FML]: Max texture size: 16384
-[20:47:24] [Client thread/INFO]: Created: 512x512 textures-atlas
-[20:47:35] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
-[20:47:35] [Server thread/INFO]: Generating keypair
-[20:47:36] [Server thread/INFO] [FML]: Injecting existing block and item data into this server instance
-[20:47:36] [Server thread/INFO] [FML]: Applying holder lookups
-[20:47:36] [Server thread/INFO] [FML]: Holder lookups applied
-[20:47:36] [Server thread/INFO] [FML]: Loading dimension 0 (i test my stupid mod) (net.minecraft.server.integrated.IntegratedServer@6d6501db)
-[20:47:36] [Server thread/INFO] [FML]: Loading dimension 1 (i test my stupid mod) (net.minecraft.server.integrated.IntegratedServer@6d6501db)
-[20:47:36] [Server thread/INFO] [FML]: Loading dimension -1 (i test my stupid mod) (net.minecraft.server.integrated.IntegratedServer@6d6501db)
-[20:47:36] [Server thread/INFO]: Preparing start region for level 0
-[20:47:37] [Server thread/INFO]: Preparing spawn area: 7%
-[20:47:38] [Server thread/INFO]: Preparing spawn area: 80%
-[20:47:39] [Server thread/INFO]: Changing view distance to 2, from 10
-[20:47:41] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
-[20:47:41] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
-[20:47:41] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 4 mods : FML@8.0.99.99,Forge@11.15.1.2318,hypermod@1.7-BETA,mcp@9.19
-[20:47:41] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
-[20:47:41] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
-[20:47:41] [Server thread/INFO]: Player287[local:E:157f6f8b] logged in with entity id 208 at (242.59359573982914, 66.0, 303.91132246741927)
-[20:47:41] [Server thread/INFO]: Player287 joined the game
-[20:47:43] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2378ms behind, skipping 47 tick(s)
-[20:47:48] [Client thread/INFO]: [CHAT] Usage: /playsound <sound> <player> [x] [y] [z] [volume] [pitch] [minimumVolume]
-[20:48:14] [Client thread/INFO]: [CHAT] The number you have entered (100.0) is too big, it must be at most 2.0
-[20:48:19] [Client thread/INFO]: [CHAT] The number you have entered (2.0) is too big, it must be at most 1.0
-[20:48:20] [Server thread/INFO]: [Player287: Played sound 'hypermod:themoon' to Player287]
-[20:48:20] [Thread-11/ERROR]: Error in class 'CodecJOrbis'
-[20:48:20] [Thread-11/ERROR]: Ogg header not recognized in method 'readHeader'.
-[20:48:20] [Thread-11/ERROR]: Error in class 'CodecJOrbis'
-[20:48:20] [Thread-11/ERROR]: Error reading the header
-[20:48:42] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8921ms behind, skipping 178 tick(s)
-:runClient FAILED
-
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-Execution failed for task ':runClient'.
-> Process 'command 'C:\Program Files\Java\jdk1.8.0_281\bin\java.exe'' finished with non-zero exit value -805306369
-
-* Try:
-Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
-
-BUILD FAILED
-
-Total time: 2 mins 22.056 secs
+Total time: 12.271 secs
