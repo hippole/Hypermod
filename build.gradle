@@ -19,7 +19,7 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-jar.archiveName="Hypermod 1.8-BETA.jar"
+jar.archiveName="Hypermod 1.8.1-BETA.jar"
 group = "io.github.Hypermnesiaa.hypermod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 
 minecraft {

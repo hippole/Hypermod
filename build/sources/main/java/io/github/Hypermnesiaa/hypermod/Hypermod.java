@@ -26,7 +26,7 @@ public class Hypermod extends CommandBase {
     public static int GEXP = 0;
 
     public static final String MODID = "hypermod";
-    public static final String VERSION = "1.8-BETA";
+    public static final String VERSION = "1.8.1-BETA";
 
     private final RandomWord randomWord = new RandomWord();
     private final Coordinates coordinates = new Coordinates();
@@ -42,6 +42,7 @@ public class Hypermod extends CommandBase {
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(new GEXP(this));
         MinecraftForge.EVENT_BUS.register(new RenderGuiHandler());
+        MinecraftForge.EVENT_BUS.register(new Fancy());
         try {
             ClientCommandHandler.instance.registerCommand(randomWord);
             ClientCommandHandler.instance.registerCommand(coordinates);
