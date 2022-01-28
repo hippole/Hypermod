@@ -1,0 +1,416 @@
+Symbol range map extraction starting
+Processing 6 files
+processing io\github\Hypermnesiaa\hypermod\Hypermod.java
+@|io\github\Hypermnesiaa\hypermod\Hypermod.java|8|39|io.github.Hypermnesiaa.hypermod|package|io.github.Hypermnesiaa.hypermod|(file)
+Class Start: io.github.Hypermnesiaa.hypermod.Hypermod
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|495|501|String|class|java.lang.String
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|502|507|MODID|field|io.github.Hypermnesiaa.hypermod.Hypermod|MODID|
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|546|552|String|class|java.lang.String
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|553|560|VERSION|field|io.github.Hypermnesiaa.hypermod.Hypermod|VERSION|
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|596|606|randomWord|class|io.github.Hypermnesiaa.hypermod.randomWord
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|607|617|randomWord|field|io.github.Hypermnesiaa.hypermod.Hypermod|randomWord|
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|624|634|randomWord|class|io.github.Hypermnesiaa.hypermod.randomWord
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|656|667|coordinates|class|io.github.Hypermnesiaa.hypermod.coordinates
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|668|679|coordinates|field|io.github.Hypermnesiaa.hypermod.Hypermod|coordinates|
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|686|697|coordinates|class|io.github.Hypermnesiaa.hypermod.coordinates
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|719|726|theMoon|class|io.github.Hypermnesiaa.hypermod.theMoon
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|727|734|theMoon|field|io.github.Hypermnesiaa.hypermod.Hypermod|theMoon|
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|741|748|theMoon|class|io.github.Hypermnesiaa.hypermod.theMoon
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|770|783|hypixelStatus|class|io.github.Hypermnesiaa.hypermod.hypixelStatus
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|784|797|hypixelStatus|field|io.github.Hypermnesiaa.hypermod.Hypermod|hypixelStatus|
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|804|817|hypixelStatus|class|io.github.Hypermnesiaa.hypermod.hypixelStatus
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|839|845|apiKey|class|io.github.Hypermnesiaa.hypermod.apiKey
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|846|852|apiKey|field|io.github.Hypermnesiaa.hypermod.Hypermod|apiKey|
+   @|io\github\Hypermnesiaa\hypermod\Hypermod.java|859|865|apiKey|class|io.github.Hypermnesiaa.hypermod.apiKey
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|905|909|init|method|io.github.Hypermnesiaa.hypermod.Hypermod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|910|932|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|933|938|event|param|io.github.Hypermnesiaa.hypermod.Hypermod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|950|966|FMLCommonHandler|class|net.minecraftforge.fml.common.FMLCommonHandler
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|967|975|instance|method|net.minecraftforge.fml.common.FMLCommonHandler|instance|()Lnet/minecraftforge/fml/common/FMLCommonHandler;
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|978|981|bus|method|net.minecraftforge.fml.common.FMLCommonHandler|bus|()Lnet/minecraftforge/fml/common/eventhandler/EventBus;
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|984|992|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1008|1022|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1023|1032|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1033|1041|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1075|1095|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1096|1104|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1105|1120|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1121|1131|randomWord|field|io.github.Hypermnesiaa.hypermod.Hypermod|randomWord
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1146|1166|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1167|1175|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1176|1191|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1192|1203|coordinates|field|io.github.Hypermnesiaa.hypermod.Hypermod|coordinates
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1218|1238|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1239|1247|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1248|1263|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1264|1271|theMoon|field|io.github.Hypermnesiaa.hypermod.Hypermod|theMoon
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1286|1306|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1307|1315|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1316|1331|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1332|1345|hypixelStatus|field|io.github.Hypermnesiaa.hypermod.Hypermod|hypixelStatus
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1360|1380|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1381|1389|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1390|1405|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1406|1412|apiKey|field|io.github.Hypermnesiaa.hypermod.Hypermod|apiKey
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1433|1442|Exception|class|java.lang.Exception
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1460|1466|System|class|java.lang.System
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1467|1470|err|field|java.lang.System|err
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1471|1478|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|io\github\Hypermnesiaa\hypermod\Hypermod.java|1552|1567|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+Class End  : io.github.Hypermnesiaa.hypermod.Hypermod
+endProcessing io\github\Hypermnesiaa\hypermod\Hypermod.java
+
+processing io\github\Hypermnesiaa\hypermod\apiKey.java
+@|io\github\Hypermnesiaa\hypermod\apiKey.java|8|39|io.github.Hypermnesiaa.hypermod|package|io.github.Hypermnesiaa.hypermod|(file)
+Class Start: io.github.Hypermnesiaa.hypermod.apiKey
+   Method Start: getCommandName()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|488|502|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|481|487|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|571|586|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|564|570|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|587|601|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|602|608|sender|param|io.github.Hypermnesiaa.hypermod.apiKey|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|sender|0
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: getRequiredPermissionLevel()I
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|688|714|getRequiredPermissionLevel|method|net.minecraft.command.CommandBase|getRequiredPermissionLevel|()I
+   Method End: getRequiredPermissionLevel()I
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|775|789|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|835|851|CommandException|class|net.minecraft.command.CommandException
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|790|804|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|805|811|sender|param|io.github.Hypermnesiaa.hypermod.apiKey|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|813|819|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|822|826|args|param|io.github.Hypermnesiaa.hypermod.apiKey|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|862|877|StringSelection|class|java.awt.datatransfer.StringSelection
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|894|909|StringSelection|class|java.awt.datatransfer.StringSelection
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|959|968|Clipboard|class|java.awt.datatransfer.Clipboard
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|981|988|Toolkit|class|java.awt.Toolkit
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|989|1006|getDefaultToolkit|method|java.awt.Toolkit|getDefaultToolkit|()Ljava/awt/Toolkit;
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|1009|1027|getSystemClipboard|method|java.awt.Toolkit|getSystemClipboard|()Ljava/awt/datatransfer/Clipboard;
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|1049|1060|setContents|method|java.awt.datatransfer.Clipboard|setContents|(Ljava/awt/datatransfer/Transferable;Ljava/awt/datatransfer/ClipboardOwner;)V
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|1092|1101|Minecraft|class|net.minecraft.client.Minecraft
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|1102|1114|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|1117|1126|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|1127|1141|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|1146|1163|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|1164|1182|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|1183|1195|LIGHT_PURPLE|field|net.minecraft.util.EnumChatFormatting|LIGHT_PURPLE
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|1256|1274|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\apiKey.java|1275|1279|GRAY|field|net.minecraft.util.EnumChatFormatting|GRAY
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+Class End  : io.github.Hypermnesiaa.hypermod.apiKey
+endProcessing io\github\Hypermnesiaa\hypermod\apiKey.java
+
+processing io\github\Hypermnesiaa\hypermod\coordinates.java
+@|io\github\Hypermnesiaa\hypermod\coordinates.java|8|39|io.github.Hypermnesiaa.hypermod|package|io.github.Hypermnesiaa.hypermod|(file)
+Class Start: io.github.Hypermnesiaa.hypermod.coordinates
+   Method Start: getCommandName()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|296|310|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|289|295|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|384|399|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|377|383|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|400|414|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|415|421|sender|param|io.github.Hypermnesiaa.hypermod.coordinates|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|sender|0
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: getRequiredPermissionLevel()I
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|501|527|getRequiredPermissionLevel|method|net.minecraft.command.CommandBase|getRequiredPermissionLevel|()I
+   Method End: getRequiredPermissionLevel()I
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|588|602|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|648|664|CommandException|class|net.minecraft.command.CommandException
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|603|617|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|618|624|sender|param|io.github.Hypermnesiaa.hypermod.coordinates|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|626|632|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|635|639|args|param|io.github.Hypermnesiaa.hypermod.coordinates|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|694|703|Minecraft|class|net.minecraft.client.Minecraft
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|704|716|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|719|728|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|729|740|getPosition|method|net.minecraft.command.ICommandSender|getPosition|()Lnet/minecraft/util/BlockPos;
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|743|747|getX|method|net.minecraft.util.Vec3i|getX|()I
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|778|787|Minecraft|class|net.minecraft.client.Minecraft
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|788|800|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|803|812|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|813|824|getPosition|method|net.minecraft.command.ICommandSender|getPosition|()Lnet/minecraft/util/BlockPos;
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|827|831|getY|method|net.minecraft.util.Vec3i|getY|()I
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|862|871|Minecraft|class|net.minecraft.client.Minecraft
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|872|884|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|887|896|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|897|908|getPosition|method|net.minecraft.command.ICommandSender|getPosition|()Lnet/minecraft/util/BlockPos;
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|911|915|getZ|method|net.minecraft.util.Vec3i|getZ|()I
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|927|936|Minecraft|class|net.minecraft.client.Minecraft
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|937|949|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|952|961|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|io\github\Hypermnesiaa\hypermod\coordinates.java|962|977|sendChatMessage|method|net.minecraft.client.entity.EntityPlayerSP|sendChatMessage|(Ljava/lang/String;)V
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+Class End  : io.github.Hypermnesiaa.hypermod.coordinates
+endProcessing io\github\Hypermnesiaa\hypermod\coordinates.java
+
+processing io\github\Hypermnesiaa\hypermod\hypixelStatus.java
+@|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|8|39|io.github.Hypermnesiaa.hypermod|package|io.github.Hypermnesiaa.hypermod|(file)
+Class Start: io.github.Hypermnesiaa.hypermod.hypixelStatus
+   Method Start: getCommandName()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|521|535|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|514|520|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|611|626|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|604|610|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|627|641|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|642|648|sender|param|io.github.Hypermnesiaa.hypermod.hypixelStatus|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|sender|0
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: getRequiredPermissionLevel()I
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|728|754|getRequiredPermissionLevel|method|net.minecraft.command.CommandBase|getRequiredPermissionLevel|()I
+   Method End: getRequiredPermissionLevel()I
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|815|829|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|875|891|CommandException|class|net.minecraft.command.CommandException
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|830|844|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|845|851|sender|param|io.github.Hypermnesiaa.hypermod.hypixelStatus|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|853|859|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|862|866|args|param|io.github.Hypermnesiaa.hypermod.hypixelStatus|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|942|955|URLConnection|class|java.net.URLConnection
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|971|974|URL|class|java.net.URL
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1028|1032|args|param|io.github.Hypermnesiaa.hypermod.hypixelStatus|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1037|1051|openConnection|method|java.net.URL|openConnection|()Ljava/net/URLConnection;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1071|1085|BufferedReader|class|java.io.BufferedReader
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1096|1110|BufferedReader|class|java.io.BufferedReader
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1115|1132|InputStreamReader|class|java.io.InputStreamReader
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1142|1156|getInputStream|method|java.net.URLConnection|getInputStream|()Ljava/io/InputStream;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1178|1184|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1220|1233|StringBuilder|class|java.lang.StringBuilder
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1262|1275|StringBuilder|class|java.lang.StringBuilder
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1327|1335|readLine|method|java.io.BufferedReader|readLine|()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1392|1398|append|method|java.lang.AbstractStringBuilder|append|(Ljava/lang/String;)Ljava/lang/AbstractStringBuilder;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1453|1463|JSONObject|class|org.json.JSONObject
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1483|1493|JSONObject|class|org.json.JSONObject
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1516|1524|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1545|1551|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1578|1587|getString|method|org.json.JSONObject|getString|(Ljava/lang/String;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1611|1617|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1638|1647|getString|method|org.json.JSONObject|getString|(Ljava/lang/String;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1673|1686|URLConnection|class|java.net.URLConnection
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1704|1707|URL|class|java.net.URL
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1761|1775|openConnection|method|java.net.URL|openConnection|()Ljava/net/URLConnection;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1806|1824|setRequestProperty|method|java.net.URLConnection|setRequestProperty|(Ljava/lang/String;Ljava/lang/String;)V
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1893|1907|BufferedReader|class|java.io.BufferedReader
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1917|1931|BufferedReader|class|java.io.BufferedReader
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1936|1953|InputStreamReader|class|java.io.InputStreamReader
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|1965|1979|getInputStream|method|java.net.URLConnection|getInputStream|()Ljava/io/InputStream;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2001|2007|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2035|2048|StringBuilder|class|java.lang.StringBuilder
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2069|2082|StringBuilder|class|java.lang.StringBuilder
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2125|2133|readLine|method|java.io.BufferedReader|readLine|()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2182|2188|append|method|java.lang.AbstractStringBuilder|append|(Ljava/lang/String;)Ljava/lang/AbstractStringBuilder;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2236|2246|JSONObject|class|org.json.JSONObject
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2258|2268|JSONObject|class|org.json.JSONObject
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2283|2291|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2312|2318|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2331|2340|getString|method|org.json.JSONObject|getString|(Ljava/lang/String;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2366|2376|JSONObject|class|org.json.JSONObject
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2392|2405|getJSONObject|method|org.json.JSONObject|getJSONObject|(Ljava/lang/String;)Lorg/json/JSONObject;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2446|2456|getBoolean|method|org.json.JSONObject|getBoolean|(Ljava/lang/String;)Z
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2498|2504|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2524|2533|getString|method|org.json.JSONObject|getString|(Ljava/lang/String;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2567|2573|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2589|2598|getString|method|org.json.JSONObject|getString|(Ljava/lang/String;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2658|2664|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2679|2688|getString|method|org.json.JSONObject|getString|(Ljava/lang/String;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2721|2730|Minecraft|class|net.minecraft.client.Minecraft
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2731|2743|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2746|2755|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2756|2770|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2775|2792|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2793|2811|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2812|2816|GOLD|field|net.minecraft.util.EnumChatFormatting|GOLD
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2849|2867|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2868|2873|GREEN|field|net.minecraft.util.EnumChatFormatting|GREEN
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2883|2901|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2902|2912|DARK_GREEN|field|net.minecraft.util.EnumChatFormatting|DARK_GREEN
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2975|2993|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|2994|3003|DARK_AQUA|field|net.minecraft.util.EnumChatFormatting|DARK_AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3017|3035|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3036|3040|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3057|3075|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3076|3085|DARK_AQUA|field|net.minecraft.util.EnumChatFormatting|DARK_AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3103|3121|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3122|3126|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3179|3197|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3198|3207|DARK_AQUA|field|net.minecraft.util.EnumChatFormatting|DARK_AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3221|3239|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3240|3244|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3261|3279|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3280|3289|DARK_AQUA|field|net.minecraft.util.EnumChatFormatting|DARK_AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3302|3320|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3321|3325|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3341|3359|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3360|3364|GOLD|field|net.minecraft.util.EnumChatFormatting|GOLD
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3426|3439|JSONException|class|org.json.JSONException
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3477|3486|Minecraft|class|net.minecraft.client.Minecraft
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3487|3499|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3502|3511|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3512|3526|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3531|3548|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3549|3567|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3568|3572|GOLD|field|net.minecraft.util.EnumChatFormatting|GOLD
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3605|3623|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3624|3629|GREEN|field|net.minecraft.util.EnumChatFormatting|GREEN
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3639|3657|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3658|3668|DARK_GREEN|field|net.minecraft.util.EnumChatFormatting|DARK_GREEN
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3731|3749|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3750|3759|DARK_AQUA|field|net.minecraft.util.EnumChatFormatting|DARK_AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3773|3791|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3792|3796|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3813|3831|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3832|3841|DARK_AQUA|field|net.minecraft.util.EnumChatFormatting|DARK_AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3859|3877|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3878|3882|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3935|3953|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3954|3963|DARK_AQUA|field|net.minecraft.util.EnumChatFormatting|DARK_AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3977|3995|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|3996|4000|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4017|4035|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4036|4040|GOLD|field|net.minecraft.util.EnumChatFormatting|GOLD
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4140|4149|Minecraft|class|net.minecraft.client.Minecraft
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4150|4162|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4165|4174|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4175|4189|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4194|4211|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4212|4230|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4231|4234|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4290|4308|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4309|4312|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4365|4383|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4384|4387|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4416|4434|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4435|4438|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4473|4491|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4492|4495|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4558|4576|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4577|4580|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4668|4681|JSONException|class|org.json.JSONException
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4711|4720|Minecraft|class|net.minecraft.client.Minecraft
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4721|4733|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4736|4745|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4746|4760|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4765|4782|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4783|4801|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4802|4805|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4852|4863|IOException|class|java.io.IOException
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4893|4902|Minecraft|class|net.minecraft.client.Minecraft
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4903|4915|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4918|4927|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4928|4942|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4947|4964|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4965|4983|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\hypixelStatus.java|4984|4987|RED|field|net.minecraft.util.EnumChatFormatting|RED
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+Class End  : io.github.Hypermnesiaa.hypermod.hypixelStatus
+endProcessing io\github\Hypermnesiaa\hypermod\hypixelStatus.java
+
+processing io\github\Hypermnesiaa\hypermod\randomWord.java
+@|io\github\Hypermnesiaa\hypermod\randomWord.java|8|39|io.github.Hypermnesiaa.hypermod|package|io.github.Hypermnesiaa.hypermod|(file)
+Class Start: io.github.Hypermnesiaa.hypermod.randomWord
+   Method Start: randomWithRange(II)I
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|463|478|randomWithRange|method|io.github.Hypermnesiaa.hypermod.randomWord|randomWithRange|(II)I
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|483|486|min|param|io.github.Hypermnesiaa.hypermod.randomWord|randomWithRange|(II)I|min|0
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|492|495|max|param|io.github.Hypermnesiaa.hypermod.randomWord|randomWithRange|(II)I|max|1
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|520|523|max|param|io.github.Hypermnesiaa.hypermod.randomWord|randomWithRange|(II)I|max|1
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|526|529|min|param|io.github.Hypermnesiaa.hypermod.randomWord|randomWithRange|(II)I|min|0
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|558|562|Math|class|java.lang.Math
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|563|569|random|method|java.lang.Math|random|()D
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|583|586|min|param|io.github.Hypermnesiaa.hypermod.randomWord|randomWithRange|(II)I|min|0
+   Method End: randomWithRange(II)I
+   Method Start: getCommandName()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|635|649|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|628|634|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|738|753|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|731|737|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|754|768|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|769|775|sender|param|io.github.Hypermnesiaa.hypermod.randomWord|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|sender|0
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: getRequiredPermissionLevel()I
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|871|897|getRequiredPermissionLevel|method|net.minecraft.command.CommandBase|getRequiredPermissionLevel|()I
+   Method End: getRequiredPermissionLevel()I
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|974|988|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1034|1050|CommandException|class|net.minecraft.command.CommandException
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|989|1003|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1004|1010|sender|param|io.github.Hypermnesiaa.hypermod.randomWord|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1012|1018|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1021|1025|args|param|io.github.Hypermnesiaa.hypermod.randomWord|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1087|1103|RandomAccessFile|class|java.io.RandomAccessFile
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1115|1131|RandomAccessFile|class|java.io.RandomAccessFile
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1227|1237|randomWord|class|io.github.Hypermnesiaa.hypermod.randomWord
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1248|1258|randomWord|class|io.github.Hypermnesiaa.hypermod.randomWord
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1297|1303|length|method|java.io.RandomAccessFile|length|()J
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1339|1354|randomWithRange|method|io.github.Hypermnesiaa.hypermod.randomWord|randomWithRange|(II)I
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1394|1398|seek|method|java.io.RandomAccessFile|seek|(J)V
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1428|1436|readLine|method|java.io.DataInput|readLine|()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1461|1469|readLine|method|java.io.DataInput|readLine|()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1489|1495|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1508|1516|readLine|method|java.io.DataInput|readLine|()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1536|1545|Minecraft|class|net.minecraft.client.Minecraft
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1546|1558|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1561|1570|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1571|1585|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1590|1607|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1608|1626|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1627|1631|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1659|1677|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1678|1684|YELLOW|field|net.minecraft.util.EnumChatFormatting|YELLOW
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1716|1737|FileNotFoundException|class|java.io.FileNotFoundException
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1761|1776|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1801|1812|IOException|class|java.io.IOException
+      @|io\github\Hypermnesiaa\hypermod\randomWord.java|1836|1851|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+Class End  : io.github.Hypermnesiaa.hypermod.randomWord
+endProcessing io\github\Hypermnesiaa\hypermod\randomWord.java
+
+processing io\github\Hypermnesiaa\hypermod\theMoon.java
+@|io\github\Hypermnesiaa\hypermod\theMoon.java|8|39|io.github.Hypermnesiaa.hypermod|package|io.github.Hypermnesiaa.hypermod|(file)
+Class Start: io.github.Hypermnesiaa.hypermod.theMoon
+   Method Start: getCommandName()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|484|498|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|477|483|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|568|583|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|561|567|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|584|598|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|599|605|sender|param|io.github.Hypermnesiaa.hypermod.theMoon|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|sender|0
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: getRequiredPermissionLevel()I
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|685|711|getRequiredPermissionLevel|method|net.minecraft.command.CommandBase|getRequiredPermissionLevel|()I
+   Method End: getRequiredPermissionLevel()I
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|772|786|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|832|848|CommandException|class|net.minecraft.command.CommandException
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|787|801|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|802|808|sender|param|io.github.Hypermnesiaa.hypermod.theMoon|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|810|816|String|class|java.lang.String
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|819|823|args|param|io.github.Hypermnesiaa.hypermod.theMoon|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|859|868|Minecraft|class|net.minecraft.client.Minecraft
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|869|881|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|884|893|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|894|903|playSound|method|net.minecraft.entity.Entity|playSound|(Ljava/lang/String;FF)V
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|935|951|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|967|983|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|1016|1025|Minecraft|class|net.minecraft.client.Minecraft
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|1026|1038|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|1041|1050|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|1051|1065|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|1070|1087|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|1088|1106|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|io\github\Hypermnesiaa\hypermod\theMoon.java|1107|1110|RED|field|net.minecraft.util.EnumChatFormatting|RED
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+Class End  : io.github.Hypermnesiaa.hypermod.theMoon
+endProcessing io\github\Hypermnesiaa\hypermod\theMoon.java
+

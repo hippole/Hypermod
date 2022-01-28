@@ -1,0 +1,68 @@
+{
+  "fancy": {
+    "category": "master",
+    "sounds": [
+      "command/fancy"
+    ]
+  },
+  "gamestart": {
+    "category": "master",
+    "sounds": [
+      "zombies/gamestart"
+    ]
+  },
+  "gamewin1": {
+    "category": "master",
+    "sounds": [
+      "zombies/gamewin1"
+    ]
+  },
+  "gameend1": {
+    "category": "master",
+    "sounds": [
+      "zombies/gameend1"
+    ]
+  },
+  "roundchange": {
+    "category": "master",
+    "sounds": [
+      "zombies/roundchange"
+    ]
+  },
+  "maxammo": {
+    "category": "master",
+    "sounds": [
+      "zombies/maxammo"
+    ]
+  },
+  "doublegold": {
+    "category": "master",
+    "sounds": [
+      "zombies/doublegold"
+    ]
+  },
+  "instakill": {
+    "category": "master",
+    "sounds": [
+      "zombies/instakill"
+    ]
+  },
+  "carpenter": {
+    "category": "master",
+    "sounds": [
+      "zombies/carpenter"
+    ]
+  },
+  "shoppingspree": {
+    "category": "master",
+    "sounds": [
+      "zombies/shoppingspree"
+    ]
+  },
+  "bonusgold": {
+    "category": "master",
+    "sounds": [
+      "zombies/bonusgold"
+    ]
+  }
+}

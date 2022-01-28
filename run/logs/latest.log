@@ -1,0 +1,90 @@
+[20:20:43] [Client thread/INFO]: Setting user: Player606
+[20:20:55] [Client thread/INFO]: LWJGL Version: 2.9.4
+[20:21:05] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hypermod
+[20:21:07] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:21:07] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[20:21:07] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:21:08] [Thread-9/INFO]: OpenAL initialized.
+[20:21:08] [Sound Library Loader/INFO]: Sound engine started
+[20:21:33] [Client thread/INFO]: Created: 16x16 textures-atlas
+[20:21:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hypermod
+[20:21:38] [Client thread/INFO]: SoundSystem shutting down...
+[20:21:38] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[20:21:38] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:21:38] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[20:21:38] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:21:38] [Thread-11/INFO]: OpenAL initialized.
+[20:21:39] [Sound Library Loader/INFO]: Sound engine started
+[20:22:02] [Client thread/INFO]: Created: 512x512 textures-atlas
+[20:22:42] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[20:22:42] [Server thread/INFO]: Generating keypair
+[20:22:43] [Server thread/INFO]: Preparing start region for level 0
+[20:22:44] [Server thread/INFO]: Preparing spawn area: 0%
+[20:22:45] [Server thread/INFO]: Preparing spawn area: 31%
+[20:22:46] [Server thread/INFO]: Preparing spawn area: 68%
+[20:22:48] [Server thread/INFO]: Changing view distance to 2, from 10
+[20:22:50] [Server thread/INFO]: Player606[local:E:fa2d01e8] logged in with entity id 233 at (229.5925612463353, 75.0, 275.0615155480919)
+[20:22:51] [Server thread/INFO]: Player606 joined the game
+[20:22:54] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3090ms behind, skipping 61 tick(s)
+[20:23:19] [Client thread/INFO]: [CHAT] §aPlayed gameend
+[20:23:19] [Client thread/WARN]: Unable to play unknown soundEvent: hypermod:gameend
+[20:23:24] [Server thread/INFO]: Saving and pausing game...
+[20:23:25] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[20:23:27] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[20:23:27] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End
+[20:23:27] [Client thread/INFO]: [CHAT] §aPlayed gameend1
+[20:23:29] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4571ms behind, skipping 91 tick(s)
+[20:24:04] [Server thread/INFO]: Saving and pausing game...
+[20:24:04] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[20:24:06] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[20:24:06] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End
+[20:24:06] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2381ms behind, skipping 47 tick(s)
+[20:24:17] [Client thread/INFO]: [CHAT] The entity UUID provided is in an invalid format
+[20:24:19] [Server thread/INFO]: [Player606: Teleported Player606 to 235.64226395728278, 10.0, 306.39077893933734]
+[20:24:19] [Client thread/INFO]: [CHAT] Teleported Player606 to 235.64226395728278, 10.0, 306.39077893933734
+[20:24:23] [Server thread/INFO]: [Player606: Teleported Player606 to 235.64226395728278, 100.0, 306.39077893933734]
+[20:24:23] [Client thread/INFO]: [CHAT] Teleported Player606 to 235.64226395728278, 100.0, 306.39077893933734
+[20:24:25] [Server thread/INFO]: Player606 fell from a high place
+[20:24:25] [Client thread/INFO]: [CHAT] Player606 fell from a high place
+[20:24:26] [Thread-11/ERROR]: Error in class 'SourceLWJGL OpenAL'
+[20:24:26] [Thread-11/ERROR]: Channel null in method 'stop'
+[20:24:26] [Thread-11/ERROR]: Error in class 'SourceLWJGL OpenAL'
+[20:24:26] [Thread-11/ERROR]: Channel null in method 'stop'
+[20:24:26] [Thread-11/ERROR]: Error in class 'SourceLWJGL OpenAL'
+[20:24:26] [Thread-11/ERROR]: Channel null in method 'stop'
+[20:24:29] [Server thread/INFO]: [Player606: Object successfully summoned]
+[20:24:29] [Client thread/INFO]: [CHAT] Object successfully summoned
+[20:24:30] [Server thread/INFO]: [Player606: Object successfully summoned]
+[20:24:30] [Client thread/INFO]: [CHAT] Object successfully summoned
+[20:24:31] [Server thread/INFO]: Saving and pausing game...
+[20:24:31] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[20:24:31] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[20:24:31] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End
+[20:25:15] [Server thread/INFO]: Saving and pausing game...
+[20:25:15] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[20:25:17] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[20:25:17] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End
+[20:25:29] [Server thread/INFO]: <Player606> Coordinates!: X:236 Y:65 Z:299
+[20:25:29] [Client thread/INFO]: [CHAT] <Player606> Coordinates!: X:236 Y:65 Z:299
+[20:25:30] [Server thread/INFO]: <Player606> Coordinates!: X:236 Y:66 Z:296
+[20:25:30] [Client thread/INFO]: [CHAT] <Player606> Coordinates!: X:236 Y:66 Z:296
+[20:25:30] [Server thread/INFO]: <Player606> Coordinates!: X:235 Y:66 Z:294
+[20:25:30] [Client thread/INFO]: [CHAT] <Player606> Coordinates!: X:235 Y:66 Z:294
+[20:25:31] [Server thread/INFO]: <Player606> Coordinates!: X:235 Y:66 Z:294
+[20:25:31] [Client thread/INFO]: [CHAT] <Player606> Coordinates!: X:235 Y:66 Z:294
+[20:25:31] [Server thread/INFO]: <Player606> Coordinates!: X:235 Y:66 Z:294
+[20:25:31] [Client thread/INFO]: [CHAT] <Player606> Coordinates!: X:235 Y:66 Z:294
+[20:25:31] [Server thread/INFO]: <Player606> Coordinates!: X:235 Y:66 Z:294
+[20:25:31] [Client thread/INFO]: [CHAT] <Player606> Coordinates!: X:235 Y:66 Z:294
+[20:25:31] [Server thread/INFO]: <Player606> Coordinates!: X:235 Y:66 Z:294
+[20:25:31] [Client thread/INFO]: [CHAT] <Player606> Coordinates!: X:235 Y:66 Z:294
+[20:25:41] [Client thread/INFO]: Stopping!
+[20:25:41] [Client thread/INFO]: SoundSystem shutting down...
+[20:25:42] [Server thread/INFO]: Stopping server
+[20:25:42] [Server thread/INFO]: Saving players
+[20:25:42] [Server thread/INFO]: Saving worlds
+[20:25:42] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Overworld
+[20:25:42] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/Nether
+[20:25:42] [Server thread/INFO]: Saving chunks for level 'i test my stupid mod'/The End
+[20:25:42] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[20:25:43] [Client Shutdown Thread/INFO]: Stopping server
