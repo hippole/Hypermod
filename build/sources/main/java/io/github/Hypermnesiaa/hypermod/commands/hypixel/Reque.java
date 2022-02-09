@@ -1,5 +1,6 @@
 package io.github.Hypermnesiaa.hypermod.commands.hypixel;
 
+import io.github.Hypermnesiaa.hypermod.misc.Misc;
 import io.github.Hypermnesiaa.hypermod.utils.ConfigHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
@@ -53,13 +54,11 @@ public class Reque extends CommandBase {
                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GOLD + "Sending to " + ConfigHandler.requeValue + "..."));
                 Minecraft.getMinecraft().thePlayer.sendChatMessage("/play " + ConfigHandler.requeValue);
             } else {
-                Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "Server is not Hypixel! Canceling action."));
-                System.err.println("Server is not Hypixel! Canceling action.");
+                Misc.raiseError("Server is not Hypixel! Canceling action.");
                 return;
            }
         } catch (NullPointerException e) {
-            Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED  + "You are in a singleplayer world! Canceling action."));
-            System.err.println("Player is in a singleplayer world! Canceling action.");
+            Misc.raiseError("You are in a singleplayer world! Canceling action.");
         }
     }
 

@@ -1,5 +1,6 @@
 package io.github.Hypermnesiaa.hypermod.commands.hypixel;
 
+import io.github.Hypermnesiaa.hypermod.misc.Misc;
 import io.github.Hypermnesiaa.hypermod.utils.ConfigHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
@@ -10,7 +11,9 @@ import net.minecraft.util.EnumChatFormatting;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -29,7 +32,7 @@ public class HypixelStatus extends CommandBase {
 
     @Override
     public String getCommandUsage(ICommandSender sender) {
-        return "/" + getCommandDescription() + " player username";
+        return "/" + getCommandName() + " player_username";
     }
 
     @Override
@@ -46,8 +49,11 @@ public class HypixelStatus extends CommandBase {
 
     @Override
     public void processCommand(ICommandSender sender, final String[] args) throws CommandException {
+        if (args.length == 0) {
+            Misc.raiseError("No username provided.");
+        }
         if (ConfigHandler.hypixelApiKey.equalsIgnoreCase("")) {
-            Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "[ERROR] There is no Api-Key Provided in \"Hypermod.cfg\", Add it before executing this command again."));
+            Misc.raiseError("There is no Api-Key Provided in \"Hypermod.cfg\", Add it before executing this command again.");
             return;
         }
         Thread thread = new Thread() {
@@ -92,14 +98,16 @@ public class HypixelStatus extends CommandBase {
 
                             }
                         } else {
-                            Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "Could not find any information on " + name + "\n" + EnumChatFormatting.RED + "Possible reasons:\n"
-                                    + EnumChatFormatting.RED + "1. They are offline\n" + EnumChatFormatting.RED + "2. They are afk in limbo.\n" + EnumChatFormatting.RED + "3. They have their api off.\n" +
-                                    EnumChatFormatting.RED + "4. You spelled their name wrong dumbass."));
+                            Misc.raiseError("Could not find any information on " + name + "\n" + EnumChatFormatting.RED + "Possible reasons:\n" +
+                                    EnumChatFormatting.RED + "1. They are offline\n" +
+                                    EnumChatFormatting.RED + "2. They are afk in limbo.\n" +
+                                    EnumChatFormatting.RED + "3. They have their api off.\n" +
+                                    EnumChatFormatting.RED + "4. You spelled their name wrong dumbass.");
                         }
                     } catch (JSONException exception) {
-                        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "Invalid Username."));
+                        Misc.raiseError("Invalid Username");
                     } catch (IOException exception) {
-                        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "Invalid Username."));
+                        Misc.raiseError("Invalid Username");
                     }
 
                 } finally {

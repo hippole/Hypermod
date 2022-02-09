@@ -1,12 +1,13 @@
 package io.github.Hypermnesiaa.hypermod;
 
+import io.github.Hypermnesiaa.hypermod.commands.EatMinecraft;
 import io.github.Hypermnesiaa.hypermod.commands.Fancy;
+import io.github.Hypermnesiaa.hypermod.commands.RandomWord;
 import io.github.Hypermnesiaa.hypermod.commands.TestSound;
 import io.github.Hypermnesiaa.hypermod.commands.hypixel.*;
-import io.github.Hypermnesiaa.hypermod.commands.RandomWord;
-import io.github.Hypermnesiaa.hypermod.commands.hypixel.zombies.PowerUps;
-import io.github.Hypermnesiaa.hypermod.commands.hypixel.zombies.Round;
 import io.github.Hypermnesiaa.hypermod.gui.RedScreen;
+import io.github.Hypermnesiaa.hypermod.misc.zombies.PowerUps;
+import io.github.Hypermnesiaa.hypermod.misc.zombies.Round;
 import io.github.Hypermnesiaa.hypermod.utils.ConfigHandler;
 import io.github.Hypermnesiaa.hypermod.utils.RenderGuiHandler;
 import net.minecraft.client.Minecraft;
@@ -30,7 +31,7 @@ public class Hypermod extends CommandBase {
     public static int GEXP = 0;
 
     public static final String MODID = "hypermod";
-    public static final String VERSION = "1.9";
+    public static final String VERSION = "1.9.1";
 
     private final RandomWord randomWord = new RandomWord();
     private final Coordinates coordinates = new Coordinates();
@@ -40,10 +41,12 @@ public class Hypermod extends CommandBase {
     private final GEXP gexp = new GEXP(this);
     private final Reque reque = new Reque();
     private final TestSound testSound = new TestSound();
+    private final EatMinecraft eatMinecraft = new EatMinecraft();
 
-    List<CommandBase> commands = Arrays.asList(randomWord,coordinates,fancy,hypixelStatus,apiKey,gexp,reque/*testsound*/);
+    List<CommandBase> commands = Arrays.asList(randomWord,coordinates,fancy,hypixelStatus,apiKey,gexp,reque/*testsound*/,eatMinecraft);
     List<String> commandDescriptions = Arrays.asList(randomWord.getCommandDescription(),coordinates.getCommandDescription(),fancy.getCommandDescription()
-            ,hypixelStatus.getCommandDescription(),apiKey.getCommandDescription(),gexp.getCommandDescription(),reque.getCommandDescription/*,testsound.getCommandDescription*/());
+            ,hypixelStatus.getCommandDescription(),apiKey.getCommandDescription(),gexp.getCommandDescription(),reque.getCommandDescription()
+            /*,testsound.getCommandDescription*/,eatMinecraft.getCommandDescription());
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
@@ -55,6 +58,7 @@ public class Hypermod extends CommandBase {
         MinecraftForge.EVENT_BUS.register(new Round());
         MinecraftForge.EVENT_BUS.register(new PowerUps());
         MinecraftForge.EVENT_BUS.register(new RedScreen());
+        MinecraftForge.EVENT_BUS.register(new EatMinecraft());
         try {
             ClientCommandHandler.instance.registerCommand(randomWord);
             ClientCommandHandler.instance.registerCommand(coordinates);
@@ -64,6 +68,7 @@ public class Hypermod extends CommandBase {
             ClientCommandHandler.instance.registerCommand(gexp);
             ClientCommandHandler.instance.registerCommand(reque);
             ClientCommandHandler.instance.registerCommand(testSound);
+            ClientCommandHandler.instance.registerCommand(eatMinecraft);
             ClientCommandHandler.instance.registerCommand(this);
         } catch (Exception e) {
             System.out.println("[ERROR] Hypermod ran into a problem. Stacktrace:");
@@ -98,6 +103,7 @@ public class Hypermod extends CommandBase {
             if (args[0].equalsIgnoreCase("list")) {
                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(
                         EnumChatFormatting.GOLD + "=======================\n" +
+                            EnumChatFormatting.LIGHT_PURPLE + "List of all Hypermod commands\n" +
                             EnumChatFormatting.AQUA + "/randomWord\n" +
                             EnumChatFormatting.AQUA + "/coordinates | /co\n" +
                             EnumChatFormatting.AQUA + "/fancy\n" +
@@ -105,6 +111,7 @@ public class Hypermod extends CommandBase {
                             EnumChatFormatting.AQUA + "/apikey\n" +
                             EnumChatFormatting.AQUA + "/gexp\n" +
                             EnumChatFormatting.AQUA + "/reque | rq\n" +
+                            EnumChatFormatting.AQUA + "/eatminecraft\n" +
                             EnumChatFormatting.GOLD + "======================="));
             }
             for (int i = 0; i < commandDescriptions.size(); i++) {

@@ -76,8 +76,9 @@ public class GEXP extends CommandBase {
     public void processCommand(ICommandSender sender, String[] args) throws CommandException {
         if (args[0].equalsIgnoreCase("literal") || args[0].equalsIgnoreCase("l")) {
             Minecraft.getMinecraft().thePlayer.sendChatMessage("/g member " + Minecraft.getMinecraft().thePlayer.getName());
+        } else {
+            Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.YELLOW + "[WARNING] Command may not function as intended.\n" +
+                    EnumChatFormatting.GREEN + "GEXP earned in current session: " + EnumChatFormatting.DARK_GREEN + hypermod.GEXP));
         }
-        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.YELLOW + "[WARNING] Command may not function as intended.\n" +
-                EnumChatFormatting.GREEN + "GEXP earned in current session: " + EnumChatFormatting.DARK_GREEN + hypermod.GEXP));
     }
 }

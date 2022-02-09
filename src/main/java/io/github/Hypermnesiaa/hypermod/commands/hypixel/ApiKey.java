@@ -1,5 +1,6 @@
 package io.github.Hypermnesiaa.hypermod.commands.hypixel;
 
+import io.github.Hypermnesiaa.hypermod.misc.Misc;
 import io.github.Hypermnesiaa.hypermod.utils.ConfigHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
@@ -13,6 +14,8 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 
 public class ApiKey extends CommandBase {
+
+    Misc rt = new Misc();
 
     public String getCommandDescription() {
         return "Returns your current apikey";
@@ -36,7 +39,7 @@ public class ApiKey extends CommandBase {
     @Override
     public void processCommand(ICommandSender sender, String[] args) throws CommandException {
         if (ConfigHandler.hypixelApiKey.equalsIgnoreCase("")) {
-            Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "[ERROR] There is no Api-Key Provided in \"Hypermod.cfg\", Add it before executing this command again."));
+            Misc.raiseError("There is no Api-Key Provided in \"Hypermod.cfg\", Add it before executing this command again.");
             return;
         }
         StringSelection selection = new StringSelection(ConfigHandler.hypixelApiKey);

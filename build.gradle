@@ -19,7 +19,7 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-jar.archiveName="Hypermod 1.9.jar"
+jar.archiveName="Hypermod 1.9.1.jar"
 group = "io.github.Hypermnesiaa.hypermod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 
 minecraft {
@@ -36,7 +36,7 @@ minecraft {
 }
 
 dependencies {
-    compile("org.json:json:20141113")
+    compile group: 'org.json', name: 'json', version: '20211205'
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
