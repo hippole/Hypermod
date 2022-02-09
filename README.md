@@ -1,5 +1,5 @@
 # Hypermod
-**Created on March 21, 2021**
+**Created on March 21, 2021** <br>
 *Note: some earlier branches were deleted*
 ## Installation 
 Navigate to the releases tab. The most recent version of the jar should be there. <br>
