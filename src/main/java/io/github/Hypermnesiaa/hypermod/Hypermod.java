@@ -31,7 +31,7 @@ public class Hypermod extends CommandBase {
     public static int GEXP = 0;
 
     public static final String MODID = "hypermod";
-    public static final String VERSION = "1.9.3";
+    public static final String VERSION = "1.9.3.1";
 
     private final RandomWord randomWord = new RandomWord();
     private final Coordinates coordinates = new Coordinates();
@@ -101,7 +101,8 @@ public class Hypermod extends CommandBase {
                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GOLD + "Hypermod " + VERSION + "\n" +
                         EnumChatFormatting.GREEN + "Made by Hypermnesia. (but most people call me hippo)\n" +
                         EnumChatFormatting.DARK_GREEN + "To get started use /Hypermod <Command Name>, You can find a whole list of commands with /Hypermod list\n" +
-                        EnumChatFormatting.AQUA + "Here's the source code: https://github.com/Hypermnesiaa/Hypermod ,anyway have fun bye."));
+                        EnumChatFormatting.DARK_GREEN + "Here's the source code: " + EnumChatFormatting.AQUA + "https://github.com/Hypermnesiaa/Hypermod" +
+                        EnumChatFormatting.DARK_GREEN  + "anyway have fun bye."));
             }
             if (args[0].equalsIgnoreCase("list")) {
                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(
@@ -113,7 +114,7 @@ public class Hypermod extends CommandBase {
                             if (!commandAlias.isEmpty()) {
                                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.YELLOW + "/" + commandName + " | " + commandAlias));
                             } else {
-                                Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.YELLOW + commandName));
+                                Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.YELLOW + "/" + commandName));
                             }
                         }
                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GOLD + "======================="));

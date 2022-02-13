@@ -53,7 +53,7 @@ public class EatMinecraft extends CommandBase {
             if (args[0].equals(String.valueOf(confirm))) {
                 if (Misc.timeWindow) {
                     Misc.playCustomSound("boom");
-                    for (int i = 0; i < 9; i++) {
+                    for (int i = 0; i < 10; i++) {
                         Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.DARK_RED + "nom nom nom"));
                     }
                     Minecraft.getMinecraft().crashed(CrashReport.makeCrashReport(new HippoAteMinecraftException(), "being digested in hippo's stomach"));
