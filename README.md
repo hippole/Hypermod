@@ -3,7 +3,7 @@
 *Note: some earlier branches were deleted*
 ## Installation 
 Navigate to the releases tab. The most recent version of the jar should be there. <br>
-If not, the jar will be in builds/libs. <br>
+If not, the jar will be in builds/libs. (along with legacy versions) <br> 
 If thats not there either then thats your problem. idk like contact me or something.
 ## Forking and Editing
 `git clone` the repository. 
