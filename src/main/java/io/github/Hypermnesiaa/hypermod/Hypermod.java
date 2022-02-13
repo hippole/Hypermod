@@ -31,7 +31,7 @@ public class Hypermod extends CommandBase {
     public static int GEXP = 0;
 
     public static final String MODID = "hypermod";
-    public static final String VERSION = "1.9.2";
+    public static final String VERSION = "1.9.3";
 
     private final RandomWord randomWord = new RandomWord();
     private final Coordinates coordinates = new Coordinates();
@@ -47,6 +47,9 @@ public class Hypermod extends CommandBase {
     List<String> commandDescriptions = Arrays.asList(randomWord.getCommandDescription(),coordinates.getCommandDescription(),fancy.getCommandDescription()
             ,hypixelStatus.getCommandDescription(),apiKey.getCommandDescription(),gexp.getCommandDescription(),reque.getCommandDescription()
             /*,testsound.getCommandDescription*/,eatMinecraft.getCommandDescription());
+    List<String> commandAliases = Arrays.asList(randomWord.getCommandAlias(),coordinates.getCommandAlias(),fancy.getCommandAlias()
+            ,hypixelStatus.getCommandAlias(),apiKey.getCommandAlias(),gexp.getCommandAlias(),reque.getCommandAlias()
+            /*,testsound.getCommandAlias*/,eatMinecraft.getCommandAlias());
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
@@ -103,16 +106,17 @@ public class Hypermod extends CommandBase {
             if (args[0].equalsIgnoreCase("list")) {
                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(
                         EnumChatFormatting.GOLD + "=======================\n" +
-                            EnumChatFormatting.LIGHT_PURPLE + "List of all Hypermod commands\n" +
-                            EnumChatFormatting.AQUA + "/randomWord\n" +
-                            EnumChatFormatting.AQUA + "/coordinates | /co\n" +
-                            EnumChatFormatting.AQUA + "/fancy\n" +
-                            EnumChatFormatting.AQUA + "/hypixelstatus | /hs\n" +
-                            EnumChatFormatting.AQUA + "/apikey\n" +
-                            EnumChatFormatting.AQUA + "/gexp\n" +
-                            EnumChatFormatting.AQUA + "/reque | rq\n" +
-                            EnumChatFormatting.AQUA + "/eatminecraft\n" +
-                            EnumChatFormatting.GOLD + "======================="));
+                            EnumChatFormatting.LIGHT_PURPLE + "List of all Hypermod commands"));
+                        for (int i = 0; i < commandDescriptions.size(); i++) {
+                            String commandName = commands.get(i).getCommandName();
+                            String commandAlias = commandAliases.get(i);
+                            if (!commandAlias.isEmpty()) {
+                                Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.YELLOW + "/" + commandName + " | " + commandAlias));
+                            } else {
+                                Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.YELLOW + commandName));
+                            }
+                        }
+                Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GOLD + "======================="));
             }
             for (int i = 0; i < commandDescriptions.size(); i++) {
                 String commandDescription = commandDescriptions.get(i);

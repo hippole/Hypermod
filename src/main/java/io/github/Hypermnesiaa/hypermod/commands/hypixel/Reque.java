@@ -18,6 +18,10 @@ public class Reque extends CommandBase {
         return "Sends you into another Hypixel mini game";
     }
 
+    public String getCommandAlias() {
+        return "/rq";
+    }
+
     @Override
     public String getCommandName() {
         return "reque";

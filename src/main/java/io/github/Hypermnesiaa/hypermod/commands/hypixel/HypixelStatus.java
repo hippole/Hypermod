@@ -25,6 +25,10 @@ public class HypixelStatus extends CommandBase {
         return "Checks the specified player's current status on hypixel";
     }
 
+    public String getCommandAlias() {
+        return "/hs";
+    }
+
     @Override
     public String getCommandName() {
         return "hypixelstatus";

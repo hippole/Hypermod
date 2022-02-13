@@ -21,6 +21,11 @@ public class Fancy extends CommandBase {
         return "fancy";
     }
 
+    public String getCommandAlias() {
+        return "";
+    }
+
+
     @Override
     public String getCommandName() {
         return "fancy";

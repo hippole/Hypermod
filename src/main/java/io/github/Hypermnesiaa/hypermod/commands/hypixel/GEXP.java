@@ -57,6 +57,10 @@ public class GEXP extends CommandBase {
         return "Checks player GEXP gained in current session";
     }
 
+    public String getCommandAlias() {
+        return "";
+    }
+
     @Override
     public String getCommandName() {
         return "gexp";

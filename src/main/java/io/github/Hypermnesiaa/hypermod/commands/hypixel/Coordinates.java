@@ -14,6 +14,10 @@ public class Coordinates extends CommandBase {
         return "Sends your current coordinates in chat";
     }
 
+    public String getCommandAlias() {
+        return "/co";
+    }
+
     @Override
     public String getCommandName() {
         return "coordinates";

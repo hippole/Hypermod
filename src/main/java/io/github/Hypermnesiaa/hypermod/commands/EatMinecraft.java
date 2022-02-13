@@ -20,6 +20,10 @@ public class EatMinecraft extends CommandBase {
         return "feed hippo";
     }
 
+    public String getCommandAlias() {
+        return "";
+    }
+
     @Override
     public String getCommandName() {
         return "eatminecraft";
@@ -40,6 +44,7 @@ public class EatMinecraft extends CommandBase {
         try {
             if (args.length == 0) {
                 Misc.playCustomSound("car");
+                Misc.eatMinecraftTicks = 0;
                 Misc.timeWindow = true;
                 confirm = Misc.randomWithRange(1000, 9999);
                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "Are you sure? Type the command in again with the first argument being " +
@@ -48,8 +53,9 @@ public class EatMinecraft extends CommandBase {
             if (args[0].equals(String.valueOf(confirm))) {
                 if (Misc.timeWindow) {
                     Misc.playCustomSound("boom");
-                    Misc.playCustomSound("boom");
-                    Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.DARK_RED + "nom nom nom"));
+                    for (int i = 0; i < 9; i++) {
+                        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.DARK_RED + "nom nom nom"));
+                    }
                     Minecraft.getMinecraft().crashed(CrashReport.makeCrashReport(new HippoAteMinecraftException(), "being digested in hippo's stomach"));
                 } else {
                     Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "The code has expired! Run the command again to get a new code"));

@@ -19,6 +19,10 @@ public class ApiKey extends CommandBase {
         return "Returns your current apikey";
     }
 
+    public String getCommandAlias() {
+        return "";
+    }
+
     @Override
     public String getCommandName() {
         return "apikey";

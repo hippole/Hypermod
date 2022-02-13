@@ -14,6 +14,10 @@ public class TestSound extends CommandBase {
         return "[DEBUG] Plays a sound of choice";
     }
 
+    public String getCommandAlias() {
+        return "";
+    }
+
     @Override
     public String getCommandName() {
         return "testsound";
