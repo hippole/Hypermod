@@ -13,8 +13,15 @@
 *.rar
 
 # More shit #
-run
+.gradle
+build/classes
+build/resources
+build/retromapping
+build/sources
+build/taskLogs
+build/tmp
 .idea
+run
 forge-1.8.9-11.15.1.1722-changelog.txt
 MinecraftForge-Credits.txt
 MinecraftForge-License.txt
