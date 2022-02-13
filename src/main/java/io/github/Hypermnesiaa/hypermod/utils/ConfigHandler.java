@@ -23,7 +23,7 @@ public class ConfigHandler {
         String category;
 
         category = "Hypermod";
-        zombiesEnabled = config.getBoolean("enabled", category, true, "Enable AngryZombie.");
+        zombiesEnabled = config.getBoolean("enabled", category, true, "Enable Hypixel zombies custom sounds.");
         requeValue = config.getString("requeValue", category, "SOLO_INSANE", "The game you are to be sent to upon executing the /rq command.");
         randomWordFilePath = config.getString("randomWordFilePath", category, "", "The randomWord command requires a file full of words on their individual line to select a random word, Put the file path for that file here.");
         hypixelApiKey = config.getString("hypixelApiKey", category, "", "Your Hypixel Api-Key, run /api new in game to obtain your apikey. Beware: While putting anything into this field will work it may break other commands!");

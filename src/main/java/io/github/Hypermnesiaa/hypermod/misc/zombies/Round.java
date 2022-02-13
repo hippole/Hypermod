@@ -1,12 +1,10 @@
 package io.github.Hypermnesiaa.hypermod.misc.zombies;
 
-import io.github.Hypermnesiaa.hypermod.Hypermod;
+import io.github.Hypermnesiaa.hypermod.misc.Misc;
 import io.github.Hypermnesiaa.hypermod.utils.ConfigHandler;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.client.gui.GuiIngame;
 import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
@@ -63,12 +61,12 @@ public class Round {
         if (getExecutedContents().contains(content)) {
             return false;
         } else {
-            // If true, then it has not been executed yet and will play sound.
             addExecutedContents(content);
             return true;
         }
     }
 
+    // might add extra sounds later
     public void checkTitle() throws IllegalAccessException,NullPointerException {
         String title = (String) ReflectionHelper.findField(GuiIngame.class, "displayedTitle", "field_175201_x").get(Minecraft.getMinecraft().ingameGUI);
         String subtitle = (String) ReflectionHelper.findField(GuiIngame.class, "displayedSubTitle", "field_175200_y").get(Minecraft.getMinecraft().ingameGUI);
@@ -76,23 +74,23 @@ public class Round {
                 if (title.startsWith(EnumChatFormatting.RED + "Round 1") && !getGameStatus()) {
                     if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
                         Minecraft.getMinecraft().getSoundHandler().stopSounds();
-                        Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation(Hypermod.MODID, "gamestart"), 1.0F));
+                        Misc.playCustomSound("gamestart");
                         setGameStatus(true);
                     }
                 } else if (title.startsWith(EnumChatFormatting.GREEN + "You Win!")) {
                     if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
                         Minecraft.getMinecraft().getSoundHandler().stopSounds();
-                        Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation(Hypermod.MODID, "gamewin1"), 1.0F));
+                        Misc.playCustomSound("gamewin1");
                     }
                 } else if (subtitle.startsWith(EnumChatFormatting.GRAY + "You made it to Round")) {
                     if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
                         Minecraft.getMinecraft().getSoundHandler().stopSounds();
-                        Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation(Hypermod.MODID, "gameend1"), 1.0F));
+                        Misc.playCustomSound("gameend1");
                     }
                 } else if (title.startsWith(EnumChatFormatting.RED + "Round")) {
                     if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
                         Minecraft.getMinecraft().getSoundHandler().stopSounds();
-                        Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation(Hypermod.MODID, "roundchange"), 1.0F));
+                        Misc.playCustomSound("roundchange");
                     }
                 }
         }

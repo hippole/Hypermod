@@ -15,8 +15,6 @@ import java.awt.datatransfer.StringSelection;
 
 public class ApiKey extends CommandBase {
 
-    Misc rt = new Misc();
-
     public String getCommandDescription() {
         return "Returns your current apikey";
     }

@@ -1,15 +1,12 @@
 package io.github.Hypermnesiaa.hypermod.commands;
 
-import io.github.Hypermnesiaa.hypermod.Hypermod;
 import io.github.Hypermnesiaa.hypermod.misc.Misc;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.ResourceLocation;
 
 public class TestSound extends CommandBase {
 
@@ -40,7 +37,7 @@ public class TestSound extends CommandBase {
         }
         try {
             Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "Played " + args[0].toLowerCase()));
-            Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation(Hypermod.MODID, args[0].toLowerCase()), 1.0F));
+            Misc.playCustomSound(args[0]);
         } catch (Exception e) {
             Misc.raiseError("Not a valid sound! (" + args[0].toLowerCase() + ")");
         }

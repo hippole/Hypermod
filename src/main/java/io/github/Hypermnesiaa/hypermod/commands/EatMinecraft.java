@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 
 public class EatMinecraft extends CommandBase {
 
-    Integer confirm;
+    int confirm;
 
     public String getCommandDescription() {
         return "feed hippo";
@@ -39,6 +39,7 @@ public class EatMinecraft extends CommandBase {
     public void processCommand(ICommandSender sender, String[] args) throws CommandException {
         try {
             if (args.length == 0) {
+                Misc.playCustomSound("car");
                 Misc.timeWindow = true;
                 confirm = Misc.randomWithRange(1000, 9999);
                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "Are you sure? Type the command in again with the first argument being " +
@@ -46,6 +47,8 @@ public class EatMinecraft extends CommandBase {
             }
             if (args[0].equals(String.valueOf(confirm))) {
                 if (Misc.timeWindow) {
+                    Misc.playCustomSound("boom");
+                    Misc.playCustomSound("boom");
                     Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.DARK_RED + "nom nom nom"));
                     Minecraft.getMinecraft().crashed(CrashReport.makeCrashReport(new HippoAteMinecraftException(), "being digested in hippo's stomach"));
                 } else {
@@ -64,8 +67,8 @@ public class EatMinecraft extends CommandBase {
         if (Misc.timeWindow) {
             Misc.eatMinecraftTicks++;
             if (Misc.eatMinecraftTicks % 400 == 0) {
+                Misc.playCustomSound("car");
                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "Code expired, run the command again to get a new code."));
-                confirm = null;
                 Misc.timeWindow = false;
                 Misc.eatMinecraftTicks = 0;
             }

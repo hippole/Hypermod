@@ -1,8 +1,11 @@
 package io.github.Hypermnesiaa.hypermod.misc;
 
+import io.github.Hypermnesiaa.hypermod.Hypermod;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.ResourceLocation;
 
 public class Misc {
 
@@ -16,6 +19,10 @@ public class Misc {
 
     public static void raiseError(String error) {
         Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "[ERROR] " + error));
+    }
+
+    public static void playCustomSound(String sound) {
+        Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation(Hypermod.MODID, sound), 1.0F));
     }
 
 }

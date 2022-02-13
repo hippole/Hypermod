@@ -1,8 +1,7 @@
 package io.github.Hypermnesiaa.hypermod.commands;
 
-import io.github.Hypermnesiaa.hypermod.Hypermod;
+import io.github.Hypermnesiaa.hypermod.misc.Misc;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.renderer.GlStateManager;
@@ -11,7 +10,6 @@ import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
@@ -42,7 +40,7 @@ public class Fancy extends CommandBase {
     public void processCommand(ICommandSender sender, String[] args) throws CommandException {
         Thread thread = new Thread() {
             public void run() {
-                Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation(Hypermod.MODID, "fancy"), 1.0F));
+                Misc.playCustomSound("fancy");
                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.YELLOW + "F" + EnumChatFormatting.GOLD + "a" +
                         EnumChatFormatting.GREEN + "n" + EnumChatFormatting.BLUE + "c" + EnumChatFormatting.DARK_BLUE + "y" + EnumChatFormatting.DARK_PURPLE + "!"));
                 titaniumNotifMillis = System.currentTimeMillis();

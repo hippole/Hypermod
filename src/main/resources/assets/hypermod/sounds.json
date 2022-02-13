@@ -5,6 +5,18 @@
       "command/fancy"
     ]
   },
+  "car": {
+    "category": "master",
+    "sounds": [
+      "car"
+    ]
+  },
+  "boom": {
+    "category": "master",
+    "sounds": [
+      "boom"
+    ]
+  },
   "gamestart": {
     "category": "master",
     "sounds": [

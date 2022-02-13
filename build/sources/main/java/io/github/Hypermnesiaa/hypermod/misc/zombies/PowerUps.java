@@ -1,6 +1,7 @@
 package io.github.Hypermnesiaa.hypermod.misc.zombies;
 
 import io.github.Hypermnesiaa.hypermod.Hypermod;
+import io.github.Hypermnesiaa.hypermod.misc.Misc;
 import io.github.Hypermnesiaa.hypermod.utils.ConfigHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.PositionedSoundRecord;
@@ -56,32 +57,32 @@ public class PowerUps {
         if (antiPowerUpSpam(subtitle)) {
             if (subtitle.startsWith(EnumChatFormatting.BLUE + "Max Ammo")) {
                 if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
-                    Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation(Hypermod.MODID, "maxammo"), 1.0F));
+                    Misc.playCustomSound("maxammo");
                 }
             }
             if (subtitle.startsWith(EnumChatFormatting.GOLD + "Double Gold")) {
                 if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
-                    Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation(Hypermod.MODID, "doublegold"), 1.0F));
+                    Misc.playCustomSound("doublegold");
                 }
             }
             if (subtitle.startsWith(EnumChatFormatting.RED + "Insta Kill")) {
                 if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
-                    Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation(Hypermod.MODID, "instakill"), 1.0F));
+                    Misc.playCustomSound("instakill");
                 }
             }
             if (subtitle.startsWith(EnumChatFormatting.BLUE + "Carpenter")) {
                 if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
-                    Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation(Hypermod.MODID, "carpenter"), 1.0F));
+                    Misc.playCustomSound("carpenter");
                 }
             }
             if (subtitle.startsWith(EnumChatFormatting.DARK_PURPLE + "Shopping Spree")) {
                 if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
-                    Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation(Hypermod.MODID, "shoppingspree"), 1.0F));
+                    Misc.playCustomSound("shoppingspree");
                 }
             }
             if (subtitle.startsWith(EnumChatFormatting.GOLD + "Bonus Gold")) {
                 if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
-                    Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation(Hypermod.MODID, "bonusgold"), 1.0F));
+                    Misc.playCustomSound("bonusgold");
                 }
             }
         }
