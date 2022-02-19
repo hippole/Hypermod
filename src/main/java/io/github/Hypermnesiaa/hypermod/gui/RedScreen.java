@@ -1,7 +1,7 @@
 package io.github.Hypermnesiaa.hypermod.gui;
 
 import io.github.Hypermnesiaa.hypermod.Hypermod;
-import io.github.Hypermnesiaa.hypermod.utils.ConfigHandler;
+import io.github.Hypermnesiaa.hypermod.misc.Misc;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.util.ResourceLocation;
@@ -15,12 +15,12 @@ public class RedScreen {
 
     @SubscribeEvent(priority = EventPriority.NORMAL)
     public void renderOverlay(RenderGameOverlayEvent.Post event) {
-        if (ConfigHandler.zombiesEnabled) {
-            playerHealth = (int) Minecraft.getMinecraft().thePlayer.getHealth();
-            if (event.type != RenderGameOverlayEvent.ElementType.EXPERIENCE) {
-                return;
-            }
-            if (playerHealth <= 5) {
+        playerHealth = (int) Minecraft.getMinecraft().thePlayer.getHealth();
+        if (event.type != RenderGameOverlayEvent.ElementType.EXPERIENCE) {
+            return;
+        }
+        if (playerHealth <= 5) {
+            if (!Hypermod.sbaLoaded) {
                 float finalWidth = Minecraft.getMinecraft().displayWidth;
                 float finalHeight = Minecraft.getMinecraft().displayHeight;
 

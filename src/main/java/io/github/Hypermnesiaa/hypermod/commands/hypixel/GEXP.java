@@ -68,7 +68,7 @@ public class GEXP extends CommandBase {
 
     @Override
     public String getCommandUsage(ICommandSender sender) {
-        return "/" + getCommandName() + "[OPTIONAL literal]";
+        return "/" + getCommandName() + " [OPTIONAL literal]";
     }
 
     @Override

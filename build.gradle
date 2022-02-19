@@ -19,7 +19,7 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-jar.archiveName="Hypermod 1.9.3.2.jar"
+jar.archiveName="Hypermod 1.9.3.3.jar"
 group = "io.github.Hypermnesiaa.hypermod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 
 minecraft {
@@ -35,8 +35,17 @@ minecraft {
     makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
 
+configurations {
+    // This makes sure that the dependencies are in the final jar
+    jarDependencies
+}
+
 dependencies {
-    compile group: 'org.json', name: 'json', version: '20211205'
+    implementation group: 'org.json', name: 'json', version: '20211205'
+
+    jarDependencies group: 'org.json', name: 'json', version: '20211205'
+    configurations.compile.extendsFrom(configurations.jarDependencies)
+
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
@@ -83,3 +92,9 @@ processResources
                 exclude 'mcmod.info'
             }
         }
+
+jar {
+    from {
+        configurations.jarDependencies.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}

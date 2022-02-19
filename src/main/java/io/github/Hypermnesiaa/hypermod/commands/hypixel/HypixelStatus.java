@@ -53,11 +53,12 @@ public class HypixelStatus extends CommandBase {
 
     @Override
     public void processCommand(ICommandSender sender, final String[] args) throws CommandException {
-        if (args.length == 0) {
-            Misc.raiseError("No username provided.");
-        }
         if (ConfigHandler.hypixelApiKey.equalsIgnoreCase("")) {
             Misc.raiseError("There is no Api-Key Provided in \"Hypermod.cfg\", Add it before executing this command again.");
+            return;
+        }
+        if (args.length == 0) {
+            Misc.raiseError("No username provided.");
             return;
         }
         Thread thread = new Thread() {
