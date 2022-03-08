@@ -1,6 +1,6 @@
-package io.github.Hypermnesiaa.hypermod.commands.hypixel;
+package io.github.hippole.hypermod.commands.hypixel;
 
-import io.github.Hypermnesiaa.hypermod.Hypermod;
+import io.github.hippole.hypermod.Hypermod;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
@@ -68,7 +68,7 @@ public class GEXP extends CommandBase {
 
     @Override
     public String getCommandUsage(ICommandSender sender) {
-        return "/" + getCommandName() + " [OPTIONAL literal]";
+        return "/" + getCommandName() + " [(optional) l]";
     }
 
     @Override

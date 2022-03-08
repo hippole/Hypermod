@@ -1,7 +1,7 @@
-package io.github.Hypermnesiaa.hypermod.commands.hypixel;
+package io.github.hippole.hypermod.commands.hypixel;
 
-import io.github.Hypermnesiaa.hypermod.misc.Misc;
-import io.github.Hypermnesiaa.hypermod.utils.ConfigHandler;
+import io.github.hippole.hypermod.utils.Misc;
+import io.github.hippole.hypermod.utils.ConfigHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;

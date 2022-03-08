@@ -1,6 +1,6 @@
-package io.github.Hypermnesiaa.hypermod.gui;
+package io.github.hippole.hypermod.gui;
 
-import io.github.Hypermnesiaa.hypermod.utils.ConfigHandler;
+import io.github.hippole.hypermod.utils.ConfigHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 

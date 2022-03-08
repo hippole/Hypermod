@@ -1,7 +1,7 @@
-package io.github.Hypermnesiaa.hypermod.commands;
+package io.github.hippole.hypermod.commands;
 
-import io.github.Hypermnesiaa.hypermod.misc.Misc;
-import io.github.Hypermnesiaa.hypermod.misc.exceptions.HippoAteMinecraftException;
+import io.github.hippole.hypermod.utils.Misc;
+import io.github.hippole.hypermod.utils.exceptions.HippoAteMinecraftException;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;

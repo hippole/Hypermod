@@ -1,7 +1,6 @@
-package io.github.Hypermnesiaa.hypermod.gui;
+package io.github.hippole.hypermod.gui;
 
-import io.github.Hypermnesiaa.hypermod.Hypermod;
-import io.github.Hypermnesiaa.hypermod.misc.Misc;
+import io.github.hippole.hypermod.Hypermod;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.util.ResourceLocation;

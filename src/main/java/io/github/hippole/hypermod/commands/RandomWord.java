@@ -1,7 +1,7 @@
-package io.github.Hypermnesiaa.hypermod.commands;
+package io.github.hippole.hypermod.commands;
 
-import io.github.Hypermnesiaa.hypermod.misc.Misc;
-import io.github.Hypermnesiaa.hypermod.utils.ConfigHandler;
+import io.github.hippole.hypermod.utils.Misc;
+import io.github.hippole.hypermod.utils.ConfigHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
@@ -15,8 +15,6 @@ import java.io.RandomAccessFile;
 
 
 public class RandomWord extends CommandBase {
-
-    Misc rt = new Misc();
 
     public String getCommandDescription() {
         return "Returns a random word from a file.";
@@ -43,15 +41,14 @@ public class RandomWord extends CommandBase {
 
     @Override
     public void processCommand(ICommandSender sender, String[] args) throws CommandException {
-        if (ConfigHandler.randomWordFilePath.equalsIgnoreCase("")) {
+        if (ConfigHandler.wordFilePath.equalsIgnoreCase("")) {
             Misc.raiseError("There is no file path specified in \"Hypermod.cfg\". Add the file path the config file then try again.");
             return;
         }
         try {
-            RandomAccessFile file = new RandomAccessFile(ConfigHandler.randomWordFilePath, "r");
-            RandomWord num = new RandomWord();
+            RandomAccessFile file = new RandomAccessFile(ConfigHandler.wordFilePath, "r");
             long length = file.length();
-            int lines = num.rt.randomWithRange(0, (int) length);
+            int lines = Misc.randomWithRange(0, (int) length);
             file.seek(lines);
             file.readLine();
             file.readLine();

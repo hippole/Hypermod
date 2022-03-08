@@ -1,4 +1,4 @@
-package io.github.Hypermnesiaa.hypermod.commands.hypixel;
+package io.github.hippole.hypermod.commands.hypixel;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;

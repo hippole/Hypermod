@@ -1,7 +1,7 @@
-package io.github.Hypermnesiaa.hypermod.commands.hypixel;
+package io.github.hippole.hypermod.commands.hypixel;
 
-import io.github.Hypermnesiaa.hypermod.misc.Misc;
-import io.github.Hypermnesiaa.hypermod.utils.ConfigHandler;
+import io.github.hippole.hypermod.utils.Misc;
+import io.github.hippole.hypermod.utils.ConfigHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
@@ -36,7 +36,7 @@ public class Reque extends CommandBase {
 
     @Override
     public String getCommandUsage(ICommandSender sender) {
-        return "/" + getCommandName() + " [OPTIONAL value]";
+        return "/" + getCommandName() + " [(optional) value]";
     }
 
     @Override
@@ -54,7 +54,7 @@ public class Reque extends CommandBase {
                 return;
 
             }
-            else if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
+            if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel.net")) {
                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GOLD + "Sending to " + ConfigHandler.requeValue + "..."));
                 Minecraft.getMinecraft().thePlayer.sendChatMessage("/play " + ConfigHandler.requeValue);
             } else {

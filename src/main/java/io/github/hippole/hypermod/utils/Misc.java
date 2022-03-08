@@ -1,6 +1,6 @@
-package io.github.Hypermnesiaa.hypermod.misc;
+package io.github.hippole.hypermod.utils;
 
-import io.github.Hypermnesiaa.hypermod.Hypermod;
+import io.github.hippole.hypermod.Hypermod;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.util.ChatComponentText;

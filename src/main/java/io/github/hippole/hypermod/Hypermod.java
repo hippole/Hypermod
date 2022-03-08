@@ -1,16 +1,13 @@
-package io.github.Hypermnesiaa.hypermod;
+package io.github.hippole.hypermod;
 
-import io.github.Hypermnesiaa.hypermod.commands.EatMinecraft;
-import io.github.Hypermnesiaa.hypermod.commands.Fancy;
-import io.github.Hypermnesiaa.hypermod.commands.RandomWord;
-import io.github.Hypermnesiaa.hypermod.commands.TestSound;
-import io.github.Hypermnesiaa.hypermod.commands.hypixel.*;
-import io.github.Hypermnesiaa.hypermod.gui.RedScreen;
-import io.github.Hypermnesiaa.hypermod.misc.zombies.PowerUps;
-import io.github.Hypermnesiaa.hypermod.misc.zombies.Round;
-import io.github.Hypermnesiaa.hypermod.utils.ConfigHandler;
-import io.github.Hypermnesiaa.hypermod.utils.PlayerJoinServerHandler;
-import io.github.Hypermnesiaa.hypermod.utils.RenderGuiHandler;
+import io.github.hippole.hypermod.commands.*;
+import io.github.hippole.hypermod.commands.hypixel.*;
+import io.github.hippole.hypermod.gui.RedScreen;
+import io.github.hippole.hypermod.random.zombies.PowerUps;
+import io.github.hippole.hypermod.random.zombies.Round;
+import io.github.hippole.hypermod.utils.ConfigHandler;
+import io.github.hippole.hypermod.utils.PlayerJoinServerHandler;
+import io.github.hippole.hypermod.utils.RenderGuiHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
@@ -35,7 +32,7 @@ public class Hypermod extends CommandBase {
     public static boolean sbaLoaded;
 
     public static final String MODID = "hypermod";
-    public static final String VERSION = "1.9.3.3";
+    public static final String VERSION = "1.10.1";
 
     private final RandomWord randomWord = new RandomWord();
     private final Coordinates coordinates = new Coordinates();
@@ -46,14 +43,15 @@ public class Hypermod extends CommandBase {
     private final Reque reque = new Reque();
     private final TestSound testSound = new TestSound();
     private final EatMinecraft eatMinecraft = new EatMinecraft();
+    private final Wordle wordle = new Wordle();
 
-    List<CommandBase> commands = Arrays.asList(randomWord,coordinates,fancy,hypixelStatus,apiKey,gexp,reque/*testsound*/,eatMinecraft);
+    List<CommandBase> commands = Arrays.asList(randomWord,coordinates,fancy,hypixelStatus,apiKey,gexp,reque/*testsound*/,eatMinecraft,wordle);
     List<String> commandDescriptions = Arrays.asList(randomWord.getCommandDescription(),coordinates.getCommandDescription(),fancy.getCommandDescription()
             ,hypixelStatus.getCommandDescription(),apiKey.getCommandDescription(),gexp.getCommandDescription(),reque.getCommandDescription()
-            /*,testsound.getCommandDescription*/,eatMinecraft.getCommandDescription());
+            /*,testsound.getCommandDescription*/,eatMinecraft.getCommandDescription(),wordle.getCommandDescription());
     List<String> commandAliases = Arrays.asList(randomWord.getCommandAlias(),coordinates.getCommandAlias(),fancy.getCommandAlias()
             ,hypixelStatus.getCommandAlias(),apiKey.getCommandAlias(),gexp.getCommandAlias(),reque.getCommandAlias()
-            /*,testsound.getCommandAlias*/,eatMinecraft.getCommandAlias());
+            /*,testsound.getCommandAlias*/,eatMinecraft.getCommandAlias(),wordle.getCommandAlias());
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
@@ -78,6 +76,7 @@ public class Hypermod extends CommandBase {
             ClientCommandHandler.instance.registerCommand(reque);
             ClientCommandHandler.instance.registerCommand(testSound);
             ClientCommandHandler.instance.registerCommand(eatMinecraft);
+            ClientCommandHandler.instance.registerCommand(wordle);
             ClientCommandHandler.instance.registerCommand(this);
         } catch (Exception e) {
             System.out.println("[ERROR] Hypermod ran into a problem. Stacktrace:");
@@ -107,7 +106,7 @@ public class Hypermod extends CommandBase {
                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GOLD + "Hypermod " + VERSION + "\n" +
                         EnumChatFormatting.GREEN + "Made by Hypermnesia. (but most people call me hippo)\n" +
                         EnumChatFormatting.DARK_GREEN + "To get started use /Hypermod <Command Name>, You can find a whole list of commands with /Hypermod list\n" +
-                        EnumChatFormatting.LIGHT_PURPLE + "Source Code:" + EnumChatFormatting.AQUA + " https://github.com/Hypermnesiaa/Hypermod (Currently private)"));
+                        EnumChatFormatting.LIGHT_PURPLE + "Source Code:" + EnumChatFormatting.AQUA + " https://github.com/hippole/Hypermod (Currently private)"));
             }
             if (args[0].equalsIgnoreCase("list")) {
                 Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(

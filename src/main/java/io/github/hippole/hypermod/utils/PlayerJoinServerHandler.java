@@ -1,11 +1,10 @@
-package io.github.Hypermnesiaa.hypermod.utils;
+package io.github.hippole.hypermod.utils;
 
-import io.github.Hypermnesiaa.hypermod.Hypermod;
+import io.github.hippole.hypermod.Hypermod;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
-import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class PlayerJoinServerHandler {

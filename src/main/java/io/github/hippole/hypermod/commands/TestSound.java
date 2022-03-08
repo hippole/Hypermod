@@ -1,6 +1,6 @@
-package io.github.Hypermnesiaa.hypermod.commands;
+package io.github.hippole.hypermod.commands;
 
-import io.github.Hypermnesiaa.hypermod.misc.Misc;
+import io.github.hippole.hypermod.utils.Misc;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
@@ -25,7 +25,7 @@ public class TestSound extends CommandBase {
 
     @Override
     public String getCommandUsage(ICommandSender sender) {
-        return "/" + getCommandName() + " sound";
+        return "/" + getCommandName() + " (sound)";
     }
 
     @Override

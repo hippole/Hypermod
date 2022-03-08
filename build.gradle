@@ -12,6 +12,7 @@ buildscript {
     }
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'java'
 
 /*
 // for people who want stable - not yet functional for MC 1.8.8 - we require the forgegradle 2.1 snapshot
@@ -19,7 +20,11 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-jar.archiveName="Hypermod 1.9.3.3.jar"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+jar.archiveName="Hypermod 1.10.1.jar"
 group = "io.github.Hypermnesiaa.hypermod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 
 minecraft {
@@ -70,7 +75,7 @@ dependencies {
 }
 
 runClient {
-    jvmArgs "-Xmx1G", "-Xms1G"
+    jvmArgs "-Xmx2G", "-Xms256M"
 }
 
 processResources

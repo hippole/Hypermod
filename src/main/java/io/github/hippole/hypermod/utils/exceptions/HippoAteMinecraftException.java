@@ -1,4 +1,4 @@
-package io.github.Hypermnesiaa.hypermod.misc.exceptions;
+package io.github.hippole.hypermod.utils.exceptions;
 
 public class HippoAteMinecraftException extends Exception {
 

@@ -1,6 +1,6 @@
-package io.github.Hypermnesiaa.hypermod.utils;
+package io.github.hippole.hypermod.utils;
 
-import io.github.Hypermnesiaa.hypermod.gui.RandomHippo;
+import io.github.hippole.hypermod.gui.RandomHippo;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
