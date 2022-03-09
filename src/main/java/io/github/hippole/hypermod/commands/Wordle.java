@@ -145,7 +145,6 @@ public class Wordle extends CommandBase {
         } else {
             ClassLoader classloader = Thread.currentThread().getContextClassLoader();
             InputStream inputStream = classloader.getResourceAsStream("assets/hypermod/wordle.txt");
-            System.out.println(inputStream);
             InputStreamReader streamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
             BufferedReader reader = new BufferedReader(streamReader);
             ArrayList<String> words = new ArrayList<>();
@@ -174,6 +173,7 @@ public class Wordle extends CommandBase {
                     printBoard(gameWord, guess);
                     Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + String.valueOf(gameTries) + " guesses remaining."));
                     if (gameTries == 0) {
+                        Misc.playCustomSound("errorspam");
                         Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.DARK_PURPLE + "====================="));
                         Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "You ran out of tries! The correct word was: \"" +
                                 EnumChatFormatting.GOLD + gameWord + EnumChatFormatting.RED + "\"."));

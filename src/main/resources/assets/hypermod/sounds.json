@@ -76,5 +76,17 @@
     "sounds": [
       "zombies/bonusgold"
     ]
+  },
+  "error": {
+    "category": "master",
+    "sounds": [
+      "error"
+    ]
+  },
+  "errorspam": {
+    "category": "master",
+    "sounds": [
+      "errorspam"
+    ]
   }
 }

@@ -79,7 +79,6 @@ public class Hypermod extends CommandBase {
             ClientCommandHandler.instance.registerCommand(wordle);
             ClientCommandHandler.instance.registerCommand(this);
         } catch (Exception e) {
-            System.out.println("[ERROR] Hypermod ran into a problem. Stacktrace:");
             e.printStackTrace();
         }
     }

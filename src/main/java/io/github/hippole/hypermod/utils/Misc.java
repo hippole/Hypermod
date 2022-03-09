@@ -19,6 +19,7 @@ public class Misc {
 
     public static void raiseError(String error) {
         Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "[ERROR] " + error));
+        playCustomSound("error");
     }
 
     public static void playCustomSound(String sound) {
